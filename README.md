@@ -2,8 +2,8 @@
     <font size=13><b>Underbelly_Australia_Life v2.0 (UB Mods Only)</b></font>
     </br>
     </br>
-    <a href="/UB_Mods/halloween.jpg">
-        <img src="/UB_Mods/halloween.jpg" alt="Underbelly">
+    <a href="/halloween.jpg">
+        <img src="/halloween.jpg" alt="Underbelly">
     </a>
     </br>
     </br>
