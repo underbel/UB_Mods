@@ -1,0 +1,5 @@
+///'UB_SND_TEX.pbo' from Mikero's dos tools, dll version 6.03///
+prefix=UB_SND_TEX
+Pbo Type is: Arma Addon
+Sha: '5A3D4E426E7131CEA661FBF5200BA26A08538EBA'
+//////</HEADER>//////
