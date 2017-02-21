@@ -8,7 +8,13 @@ class CfgPatches
 		{
 			"A3_Characters_F",
 			"A3_Data_F",
-			"A3_Weapons_F"			
+			"A3_Weapons_F",
+			"A3_UI_F",
+			"A3_Anims_F",
+			"A3_Anims_F_Config_Sdr",
+			"asdg_jointrails",
+			"hlcweapons_core",
+			"hlcweapons_ar15"			
 		};
 		requiredVersion=0.1;
 		units[]={
@@ -35,7 +41,19 @@ class CfgPatches
 			"hlc_rifle_auga1_eagle",
 			"hlc_rifle_auga1_genji",
 			"hlc_rifle_auga1_headshot",
-			"TRYK_U_B_ARO2_CombatUniform_AL"
+			"TRYK_U_B_ARO2_CombatUniform_AL",
+			"hlc_rifle_bcmblackjack",
+			"hlc_rifle_bcmblackjack_paisley",
+			"hlc_rifle_bcmblackjack_goldprint",
+			"hlc_rifle_bcmblackjack_goldstripe",
+			"hlc_rifle_bcmblackjack_skull",
+			"hlc_rifle_CQBR_paisley",
+			"hlc_rifle_CQBR_goldprint",
+			"hlc_rifle_CQBR_goldstripe",
+			"hlc_rifle_CQBR_skull",
+			"hlc_rifle_honeybase_goldprint",
+			"hlc_rifle_honeybase_paisley",
+			"hlc_rifle_honeybase_skull"
 		};
 	};	
 };
@@ -158,7 +176,306 @@ class cfgWeapons
 		{
 			"\UB_SND_TEX\textures\skins\fiveseven_g_co_murk.paa"
 		};
-	};			
+	};
+	class hlc_rifle_bcmblackjack;
+	class hlc_rifle_bcmblackjack_paisley: hlc_rifle_bcmblackjack
+	{
+		author="Sephiris, Agent95, Toadie, Stiglitz";	
+		model="hlc_wp_ar15\mesh\JackCarbine\samr.p3d";
+		picture="\hlc_wp_ar15\tex\ui\gear_jack_ca";
+		displayName="BCM 'Black-Jack' Paisley";
+		descriptionShort="Assault rifle<br/>Caliber: .300 Blackout"; 
+		hiddenSelections[]=
+		{
+			"Upper",
+			"Lower",
+			"Foregrip",
+			"foregrip_rail",
+			"Sights",
+			"Stock"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\UB_SND_TEX\textures\skins\AR15R\blackjack\paisley_black\upper_co.paa",
+			"UB_SND_TEX\textures\skins\AR15R\blackjack\paisley_black\lower2_co.paa",
+			"UB_SND_TEX\textures\skins\AR15R\blackjack\paisley_black\smr_co.paa",
+			"UB_SND_TEX\textures\skins\AR15R\blackjack\paisley_black\smr_toprail_co.paa",
+			"UB_SND_TEX\textures\skins\AR15R\tenoyl_tbs\tbs_co.paa",
+			"UB_SND_TEX\textures\skins\AR15R\blackjack\paisley_black\b5sopmod_co.paa"
+		};
+	};
+
+	class hlc_rifle_bcmblackjack_goldprint: hlc_rifle_bcmblackjack
+	{
+		author="Sephiris, Agent95, Toadie, Stiglitz";	
+		model="hlc_wp_ar15\mesh\JackCarbine\samr.p3d";
+		picture="\hlc_wp_ar15\tex\ui\gear_jack_ca";
+		displayName="BCM 'Black-Jack' Gold Print";
+		descriptionShort="Assault rifle<br/>Caliber: .300 Blackout"; 
+		hiddenSelections[]=
+		{
+			"Upper",
+			"Lower",
+			"Foregrip",
+			"foregrip_rail",
+			"Sights",
+			"Stock"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\UB_SND_TEX\textures\skins\AR15R\blackjack\gold_printupper_co.paa",
+			"UB_SND_TEX\textures\skins\AR15R\blackjack\gold_printlower2_co.paa",
+			"UB_SND_TEX\textures\skins\AR15R\blackjack\gold_printsmr_co.paa",
+			"UB_SND_TEX\textures\skins\AR15R\blackjack\gold_printsmr_toprail_co.paa",
+			"UB_SND_TEX\textures\skins\AR15R\tenoyl_tbs\tbs_co.paa",
+			"UB_SND_TEX\textures\skins\AR15R\blackjack\gold_printb5sopmod_co.paa"
+		};
+	};
+	
+	class hlc_rifle_bcmblackjack_goldstripe: hlc_rifle_bcmblackjack
+	{
+		author="Sephiris, Agent95, Toadie, Stiglitz";	
+		model="hlc_wp_ar15\mesh\JackCarbine\samr.p3d";
+		picture="\hlc_wp_ar15\tex\ui\gear_jack_ca";
+		displayName="BCM 'Black-Jack' Gold Stripe";
+		descriptionShort="Assault rifle<br/>Caliber: .300 Blackout"; 
+		hiddenSelections[]=
+		{
+			"Upper",
+			"Lower",
+			"Foregrip",
+			"foregrip_rail",
+			"Sights",
+			"Stock"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\UB_SND_TEX\textures\skins\AR15R\blackjack\gold_stripe\upper_co.paa",
+			"UB_SND_TEX\textures\skins\AR15R\blackjack\gold_stripe\lower2_co.paa",
+			"UB_SND_TEX\textures\skins\AR15R\blackjack\gold_stripe\smr_co.paa",
+			"UB_SND_TEX\textures\skins\AR15R\blackjack\gold_stripe\smr_toprail_co.paa",
+			"UB_SND_TEX\textures\skins\AR15R\tenoyl_tbs\tbs_co.paa",
+			"UB_SND_TEX\textures\skins\AR15R\blackjack\gold_stripe\b5sopmod_co.paa"
+		};
+	};
+	
+	class hlc_rifle_bcmblackjack_skull: hlc_rifle_bcmblackjack
+	{
+		author="Sephiris, Agent95, Toadie, Stiglitz";	
+		model="hlc_wp_ar15\mesh\JackCarbine\samr.p3d";
+		picture="\hlc_wp_ar15\tex\ui\gear_jack_ca";
+		displayName="BCM 'Black-Jack' Skull";
+		descriptionShort="Assault rifle<br/>Caliber: .300 Blackout"; 
+		hiddenSelections[]=
+		{
+			"Upper",
+			"Lower",
+			"Foregrip",
+			"foregrip_rail",
+			"Sights",
+			"Stock"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\UB_SND_TEX\textures\skins\AR15R\blackjack\skull\upper_co.paa",
+			"UB_SND_TEX\textures\skins\AR15R\blackjack\skull\lower2_co.paa",
+			"UB_SND_TEX\textures\skins\AR15R\blackjack\skull\smr_co.paa",
+			"UB_SND_TEX\textures\skins\AR15R\blackjack\skull\smr_toprail_co.paa",
+			"UB_SND_TEX\textures\skins\AR15R\tenoyl_tbs\tbs_co.paa",
+			"UB_SND_TEX\textures\skins\AR15R\blackjack\skull\b5sopmod_co.paa"
+		};
+	};
+	class hlc_rifle_CQBR;
+	class hlc_rifle_CQBR_paisley: hlc_rifle_CQBR
+	{
+		dlc="Niarms_AR15";
+		author="Tenoyl, OhNoMelon, Tigg, Toadie, Stiglitz";
+		reloadAction="HLC_GestureReloadAR15_catch_WS";
+		scope=2;
+		model="hlc_wp_ar15\mesh\cqbr\cqbr.p3d";
+		picture="\hlc_wp_ar15\tex\ui\gear_cqbr_ca";
+		displayName="Colt M4 CQB-R Paisley";
+		descriptionShort="Short-Barreled Rifle<br/>Caliber: 5.56mm";
+		hiddenSelections[]=
+		{
+			"Main",
+			"Rails",
+			"Panels",
+			"VFG",
+			"Sights",
+			"FSB",
+			"Stock",
+			"GL"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"UB_SND_TEX\textures\skins\AR15R\cqb-r\paisley_black\main_co.paa",
+			"UB_SND_TEX\textures\skins\AR15R\cqb-r\paisley_black\risfore1_co.paa",
+			"UB_SND_TEX\textures\skins\AR15R\tigg\rails_co.paa",
+			"UB_SND_TEX\textures\skins\AR15R\cqb-r\vgrip_co.paa",
+			"UB_SND_TEX\textures\skins\AR15R\tenoyl_tbs\tbs_co.paa",
+			"",
+			"UB_SND_TEX\textures\skins\AR15R\cqb-r\vltor_co.paa",
+			"UB_SND_TEX\textures\skins\AR15R\m203_co.paa"
+		};	
+	};
+	class hlc_rifle_CQBR_goldprint: hlc_rifle_CQBR
+	{
+		dlc="Niarms_AR15";
+		author="Tenoyl, OhNoMelon, Tigg, Toadie, Stiglitz";
+		reloadAction="HLC_GestureReloadAR15_catch_WS";
+		scope=2;
+		model="hlc_wp_ar15\mesh\cqbr\cqbr.p3d";
+		picture="\hlc_wp_ar15\tex\ui\gear_cqbr_ca";
+		displayName="Colt M4 CQB-R Gold Print";
+		descriptionShort="Short-Barreled Rifle<br/>Caliber: 5.56mm";
+		hiddenSelections[]=
+		{
+			"Main",
+			"Rails",
+			"Panels",
+			"VFG",
+			"Sights",
+			"FSB",
+			"Stock",
+			"GL"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"UB_SND_TEX\textures\skins\AR15R\cqb-r\gold_print\main_co.paa",
+			"UB_SND_TEX\textures\skins\AR15R\cqb-r\gold_print\risfore1_co.paa",
+			"UB_SND_TEX\textures\skins\AR15R\tigg\rails_co.paa",
+			"UB_SND_TEX\textures\skins\AR15R\cqb-r\vgrip_co.paa",
+			"UB_SND_TEX\textures\skins\AR15R\tenoyl_tbs\tbs_co.paa",
+			"",
+			"UB_SND_TEX\textures\skins\AR15R\cqb-r\vltor_co.paa",
+			"UB_SND_TEX\textures\skins\AR15R\m203_co.paa"
+		};	
+	};
+	class hlc_rifle_CQBR_goldstripe: hlc_rifle_CQBR
+	{
+		dlc="Niarms_AR15";
+		author="Tenoyl, OhNoMelon, Tigg, Toadie, Stiglitz";
+		reloadAction="HLC_GestureReloadAR15_catch_WS";
+		scope=2;
+		model="hlc_wp_ar15\mesh\cqbr\cqbr.p3d";
+		picture="\hlc_wp_ar15\tex\ui\gear_cqbr_ca";
+		displayName="Colt M4 CQB-R Gold Stripe";
+		descriptionShort="Short-Barreled Rifle<br/>Caliber: 5.56mm";
+		hiddenSelections[]=
+		{
+			"Main",
+			"Rails",
+			"Panels",
+			"VFG",
+			"Sights",
+			"FSB",
+			"Stock",
+			"GL"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"UB_SND_TEX\textures\skins\AR15R\cqb-r\gold_stripe\main_co.paa",
+			"UB_SND_TEX\textures\skins\AR15R\cqb-r\gold_stripe\risfore1_co.paa",
+			"UB_SND_TEX\textures\skins\AR15R\tigg\rails_co.paa",
+			"UB_SND_TEX\textures\skins\AR15R\cqb-r\vgrip_co.paa",
+			"UB_SND_TEX\textures\skins\AR15R\tenoyl_tbs\tbs_co.paa",
+			"",
+			"UB_SND_TEX\textures\skins\AR15R\cqb-r\vltor_co.paa",
+			"UB_SND_TEX\textures\skins\AR15R\m203_co.paa"
+		};	
+	};
+	class hlc_rifle_CQBR_skull: hlc_rifle_CQBR
+	{
+		dlc="Niarms_AR15";
+		author="Tenoyl, OhNoMelon, Tigg, Toadie, Stiglitz";
+		reloadAction="HLC_GestureReloadAR15_catch_WS";
+		scope=2;
+		model="hlc_wp_ar15\mesh\cqbr\cqbr.p3d";
+		picture="\hlc_wp_ar15\tex\ui\gear_cqbr_ca";
+		displayName="Colt M4 CQB-R Skull";
+		descriptionShort="Short-Barreled Rifle<br/>Caliber: 5.56mm";
+		hiddenSelections[]=
+		{
+			"Main",
+			"Rails",
+			"Panels",
+			"VFG",
+			"Sights",
+			"FSB",
+			"Stock",
+			"GL"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"UB_SND_TEX\textures\skins\AR15R\cqb-r\skull\main_co.paa",
+			"UB_SND_TEX\textures\skins\AR15R\cqb-r\skull\risfore1_co.paa",
+			"UB_SND_TEX\textures\skins\AR15R\tigg\rails_co.paa",
+			"UB_SND_TEX\textures\skins\AR15R\cqb-r\vgrip_co.paa",
+			"UB_SND_TEX\textures\skins\AR15R\tenoyl_tbs\tbs_co.paa",
+			"",
+			"UB_SND_TEX\textures\skins\AR15R\cqb-r\vltor_co.paa",
+			"UB_SND_TEX\textures\skins\AR15R\m203_co.paa"
+		};	
+	};
+	class hlc_rifle_honeybase;
+	class hlc_rifle_honeybase_paisley: hlc_rifle_honeybase
+	{
+		dlc="Niarms_AR15";
+		deployedPivot="deploypivot";
+		scope=2;
+		author="Hypermetal, Toadie, Stiglitz";
+		model="hlc_wp_ar15\mesh\honeybadger\car15.p3d";
+		picture="\hlc_wp_ar15\tex\ui\gear_badger_ca";
+		displayName="AAC 'Honey-Badger Paisley'";
+		descriptionShort="Suppressed Carbine<br/>Caliber: .300 Blackout";
+		hiddenSelections[]=
+		{
+			"Main"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"UB_SND_TEX\textures\skins\AR15R\badger\paisley\hb_co.paa"
+		};
+	};	
+	class hlc_rifle_honeybase_goldprint: hlc_rifle_honeybase
+	{
+		dlc="Niarms_AR15";
+		deployedPivot="deploypivot";
+		scope=2;
+		author="Hypermetal, Toadie, Stiglitz";
+		model="hlc_wp_ar15\mesh\honeybadger\car15.p3d";
+		picture="\hlc_wp_ar15\tex\ui\gear_badger_ca";
+		displayName="AAC 'Honey-Badger Gold Print'";
+		descriptionShort="Suppressed Carbine<br/>Caliber: .300 Blackout";
+		hiddenSelections[]=
+		{
+			"Main"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"UB_SND_TEX\textures\skins\AR15R\badger\goldprint\hb_co.paa"
+		};
+	};	
+	class hlc_rifle_honeybase_skull: hlc_rifle_honeybase
+	{
+		dlc="Niarms_AR15";
+		deployedPivot="deploypivot";
+		scope=2;
+		author="Hypermetal, Toadie, Stiglitz";
+		model="hlc_wp_ar15\mesh\honeybadger\car15.p3d";
+		picture="\hlc_wp_ar15\tex\ui\gear_badger_ca";
+		displayName="AAC 'Honey-Badger Skull'";
+		descriptionShort="Suppressed Carbine<br/>Caliber: .300 Blackout";
+		hiddenSelections[]=
+		{
+			"Main"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"UB_SND_TEX\textures\skins\AR15R\badger\skull\hb_co.paa"
+		};
+	};	
 	class InventoryItem_Base_F;
 	class ItemCore;
 	class UniformItem: InventoryItem_Base_F
