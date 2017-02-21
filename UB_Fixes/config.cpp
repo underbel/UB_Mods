@@ -197,11 +197,11 @@ class cfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"\UB_SND_TEX\textures\skins\AR15R\blackjack\paisley_black\upper_co.paa",
-			"UB_SND_TEX\textures\skins\AR15R\blackjack\paisley_black\lower2_co.paa",
-			"UB_SND_TEX\textures\skins\AR15R\blackjack\paisley_black\smr_co.paa",
-			"UB_SND_TEX\textures\skins\AR15R\blackjack\paisley_black\smr_toprail_co.paa",
-			"UB_SND_TEX\textures\skins\AR15R\tenoyl_tbs\tbs_co.paa",
-			"UB_SND_TEX\textures\skins\AR15R\blackjack\paisley_black\b5sopmod_co.paa"
+			"\UB_SND_TEX\textures\skins\AR15R\blackjack\paisley_black\lower2_co.paa",
+			"\UB_SND_TEX\textures\skins\AR15R\blackjack\paisley_black\smr_co.paa",
+			"\UB_SND_TEX\textures\skins\AR15R\blackjack\paisley_black\smr_toprail_co.paa",
+			"\UB_SND_TEX\textures\skins\AR15R\tenoyl_tbs\tbs_co.paa",
+			"\UB_SND_TEX\textures\skins\AR15R\blackjack\paisley_black\b5sopmod_co.paa"
 		};
 	};
 
@@ -223,12 +223,12 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\UB_SND_TEX\textures\skins\AR15R\blackjack\gold_printupper_co.paa",
-			"UB_SND_TEX\textures\skins\AR15R\blackjack\gold_printlower2_co.paa",
-			"UB_SND_TEX\textures\skins\AR15R\blackjack\gold_printsmr_co.paa",
-			"UB_SND_TEX\textures\skins\AR15R\blackjack\gold_printsmr_toprail_co.paa",
-			"UB_SND_TEX\textures\skins\AR15R\tenoyl_tbs\tbs_co.paa",
-			"UB_SND_TEX\textures\skins\AR15R\blackjack\gold_printb5sopmod_co.paa"
+			"\UB_SND_TEX\textures\skins\AR15R\blackjack\gold_print\upper_co.paa",
+			"\UB_SND_TEX\textures\skins\AR15R\blackjack\gold_print\lower2_co.paa",
+			"\UB_SND_TEX\textures\skins\AR15R\blackjack\gold_print\smr_co.paa",
+			"\UB_SND_TEX\textures\skins\AR15R\blackjack\gold_print\smr_toprail_co.paa",
+			"\UB_SND_TEX\textures\skins\AR15R\tenoyl_tbs\tbs_co.paa",
+			"\UB_SND_TEX\textures\skins\AR15R\blackjack\gold_print\b5sopmod_co.paa"
 		};
 	};
 	
@@ -251,11 +251,11 @@ class cfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"\UB_SND_TEX\textures\skins\AR15R\blackjack\gold_stripe\upper_co.paa",
-			"UB_SND_TEX\textures\skins\AR15R\blackjack\gold_stripe\lower2_co.paa",
-			"UB_SND_TEX\textures\skins\AR15R\blackjack\gold_stripe\smr_co.paa",
-			"UB_SND_TEX\textures\skins\AR15R\blackjack\gold_stripe\smr_toprail_co.paa",
-			"UB_SND_TEX\textures\skins\AR15R\tenoyl_tbs\tbs_co.paa",
-			"UB_SND_TEX\textures\skins\AR15R\blackjack\gold_stripe\b5sopmod_co.paa"
+			"\UB_SND_TEX\textures\skins\AR15R\blackjack\gold_stripe\lower2_co.paa",
+			"\UB_SND_TEX\textures\skins\AR15R\blackjack\gold_stripe\smr_co.paa",
+			"\UB_SND_TEX\textures\skins\AR15R\blackjack\gold_stripe\smr_toprail_co.paa",
+			"\UB_SND_TEX\textures\skins\AR15R\tenoyl_tbs\tbs_co.paa",
+			"\UB_SND_TEX\textures\skins\AR15R\blackjack\gold_stripe\b5sopmod_co.paa"
 		};
 	};
 	
@@ -278,11 +278,11 @@ class cfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"\UB_SND_TEX\textures\skins\AR15R\blackjack\skull\upper_co.paa",
-			"UB_SND_TEX\textures\skins\AR15R\blackjack\skull\lower2_co.paa",
-			"UB_SND_TEX\textures\skins\AR15R\blackjack\skull\smr_co.paa",
-			"UB_SND_TEX\textures\skins\AR15R\blackjack\skull\smr_toprail_co.paa",
-			"UB_SND_TEX\textures\skins\AR15R\tenoyl_tbs\tbs_co.paa",
-			"UB_SND_TEX\textures\skins\AR15R\blackjack\skull\b5sopmod_co.paa"
+			"\UB_SND_TEX\textures\skins\AR15R\blackjack\skull\lower2_co.paa",
+			"\UB_SND_TEX\textures\skins\AR15R\blackjack\skull\smr_co.paa",
+			"\UB_SND_TEX\textures\skins\AR15R\blackjack\skull\smr_toprail_co.paa",
+			"\UB_SND_TEX\textures\skins\AR15R\tenoyl_tbs\tbs_co.paa",
+			"\UB_SND_TEX\textures\skins\AR15R\blackjack\skull\b5sopmod_co.paa"
 		};
 	};
 	class hlc_rifle_CQBR;
@@ -309,14 +309,14 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"UB_SND_TEX\textures\skins\AR15R\cqb-r\paisley_black\main_co.paa",
-			"UB_SND_TEX\textures\skins\AR15R\cqb-r\paisley_black\risfore1_co.paa",
-			"UB_SND_TEX\textures\skins\AR15R\tigg\rails_co.paa",
-			"UB_SND_TEX\textures\skins\AR15R\cqb-r\vgrip_co.paa",
-			"UB_SND_TEX\textures\skins\AR15R\tenoyl_tbs\tbs_co.paa",
+			"\UB_SND_TEX\textures\skins\AR15R\cqb-r\paisley_black\main_co.paa",
+			"\UB_SND_TEX\textures\skins\AR15R\cqb-r\paisley_black\risfore1_co.paa",
+			"\UB_SND_TEX\textures\skins\AR15R\tigg\rails_co.paa",
+			"\UB_SND_TEX\textures\skins\AR15R\cqb-r\vgrip_co.paa",
+			"\UB_SND_TEX\textures\skins\AR15R\tenoyl_tbs\tbs_co.paa",
 			"",
-			"UB_SND_TEX\textures\skins\AR15R\cqb-r\vltor_co.paa",
-			"UB_SND_TEX\textures\skins\AR15R\m203_co.paa"
+			"\UB_SND_TEX\textures\skins\AR15R\cqb-r\vltor_co.paa",
+			"\UB_SND_TEX\textures\skins\AR15R\m203_co.paa"
 		};	
 	};
 	class hlc_rifle_CQBR_goldprint: hlc_rifle_CQBR
@@ -342,14 +342,14 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"UB_SND_TEX\textures\skins\AR15R\cqb-r\gold_print\main_co.paa",
-			"UB_SND_TEX\textures\skins\AR15R\cqb-r\gold_print\risfore1_co.paa",
-			"UB_SND_TEX\textures\skins\AR15R\tigg\rails_co.paa",
-			"UB_SND_TEX\textures\skins\AR15R\cqb-r\vgrip_co.paa",
-			"UB_SND_TEX\textures\skins\AR15R\tenoyl_tbs\tbs_co.paa",
+			"\UB_SND_TEX\textures\skins\AR15R\cqb-r\gold_print\main_co.paa",
+			"\UB_SND_TEX\textures\skins\AR15R\cqb-r\gold_print\risfore1_co.paa",
+			"\UB_SND_TEX\textures\skins\AR15R\tigg\rails_co.paa",
+			"\UB_SND_TEX\textures\skins\AR15R\cqb-r\vgrip_co.paa",
+			"\UB_SND_TEX\textures\skins\AR15R\tenoyl_tbs\tbs_co.paa",
 			"",
-			"UB_SND_TEX\textures\skins\AR15R\cqb-r\vltor_co.paa",
-			"UB_SND_TEX\textures\skins\AR15R\m203_co.paa"
+			"\UB_SND_TEX\textures\skins\AR15R\cqb-r\vltor_co.paa",
+			"\UB_SND_TEX\textures\skins\AR15R\m203_co.paa"
 		};	
 	};
 	class hlc_rifle_CQBR_goldstripe: hlc_rifle_CQBR
@@ -375,14 +375,14 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"UB_SND_TEX\textures\skins\AR15R\cqb-r\gold_stripe\main_co.paa",
-			"UB_SND_TEX\textures\skins\AR15R\cqb-r\gold_stripe\risfore1_co.paa",
-			"UB_SND_TEX\textures\skins\AR15R\tigg\rails_co.paa",
-			"UB_SND_TEX\textures\skins\AR15R\cqb-r\vgrip_co.paa",
-			"UB_SND_TEX\textures\skins\AR15R\tenoyl_tbs\tbs_co.paa",
+			"\UB_SND_TEX\textures\skins\AR15R\cqb-r\gold_stripe\main_co.paa",
+			"\UB_SND_TEX\textures\skins\AR15R\cqb-r\gold_stripe\risfore1_co.paa",
+			"\UB_SND_TEX\textures\skins\AR15R\tigg\rails_co.paa",
+			"\UB_SND_TEX\textures\skins\AR15R\cqb-r\vgrip_co.paa",
+			"\UB_SND_TEX\textures\skins\AR15R\tenoyl_tbs\tbs_co.paa",
 			"",
-			"UB_SND_TEX\textures\skins\AR15R\cqb-r\vltor_co.paa",
-			"UB_SND_TEX\textures\skins\AR15R\m203_co.paa"
+			"\UB_SND_TEX\textures\skins\AR15R\cqb-r\vltor_co.paa",
+			"\UB_SND_TEX\textures\skins\AR15R\m203_co.paa"
 		};	
 	};
 	class hlc_rifle_CQBR_skull: hlc_rifle_CQBR
@@ -408,14 +408,14 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"UB_SND_TEX\textures\skins\AR15R\cqb-r\skull\main_co.paa",
-			"UB_SND_TEX\textures\skins\AR15R\cqb-r\skull\risfore1_co.paa",
-			"UB_SND_TEX\textures\skins\AR15R\tigg\rails_co.paa",
-			"UB_SND_TEX\textures\skins\AR15R\cqb-r\vgrip_co.paa",
-			"UB_SND_TEX\textures\skins\AR15R\tenoyl_tbs\tbs_co.paa",
+			"\UB_SND_TEX\textures\skins\AR15R\cqb-r\skull\main_co.paa",
+			"\UB_SND_TEX\textures\skins\AR15R\cqb-r\skull\risfore1_co.paa",
+			"\UB_SND_TEX\textures\skins\AR15R\tigg\rails_co.paa",
+			"\UB_SND_TEX\textures\skins\AR15R\cqb-r\vgrip_co.paa",
+			"\UB_SND_TEX\textures\skins\AR15R\tenoyl_tbs\tbs_co.paa",
 			"",
-			"UB_SND_TEX\textures\skins\AR15R\cqb-r\vltor_co.paa",
-			"UB_SND_TEX\textures\skins\AR15R\m203_co.paa"
+			"\UB_SND_TEX\textures\skins\AR15R\cqb-r\vltor_co.paa",
+			"\UB_SND_TEX\textures\skins\AR15R\m203_co.paa"
 		};	
 	};
 	class hlc_rifle_honeybase;
@@ -435,7 +435,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"UB_SND_TEX\textures\skins\AR15R\badger\paisley\hb_co.paa"
+			"\UB_SND_TEX\textures\skins\AR15R\badger\paisley\hb_co.paa"
 		};
 	};	
 	class hlc_rifle_honeybase_goldprint: hlc_rifle_honeybase
@@ -454,7 +454,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"UB_SND_TEX\textures\skins\AR15R\badger\goldprint\hb_co.paa"
+			"\UB_SND_TEX\textures\skins\AR15R\badger\goldprint\hb_co.paa"
 		};
 	};	
 	class hlc_rifle_honeybase_skull: hlc_rifle_honeybase
@@ -473,7 +473,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"UB_SND_TEX\textures\skins\AR15R\badger\skull\hb_co.paa"
+			"\UB_SND_TEX\textures\skins\AR15R\badger\skull\hb_co.paa"
 		};
 	};	
 	class InventoryItem_Base_F;
