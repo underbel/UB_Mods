@@ -7,7 +7,10 @@
     </a>
     </br>
     </br>
-Before contributing to this branch please submit request with Underbelly staff prior.
+This Repo is dedicated to custom skins for the Underbelly Australia Life 2.0 Mod. All artist creations (skins/textures) contributed to this repo will remain the property copyright of Underbelly Australia Life and cannot be used for any other purpose without our approval. Before contributing to this branch please submit your request to Underbelly staff prior (see links below). 
+</br>
+</br>
+Please Note: Only create configs and textures for items already accessible in game. Please add within your custom class item a (textureBy = "YOUR NAME";) for future in game skin creator publications.
 </br>
 </br>
 </br>
