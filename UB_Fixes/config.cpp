@@ -55,6 +55,16 @@ class CfgPatches
 			"hlc_rifle_honeybase_paisley",
 			"hlc_rifle_honeybase_skull"
 		};
+            	requiredAddons[]=
+		{
+			"A3_Anims_F",
+			"A3_Anims_F_Config_Sdr",
+			"A3_Data_F",
+			"A3_Ui_F"
+		};
+		requiredVersion=0.1;
+		units[]=
+		{};			
 	};	
 };
 class cfgVehicles
@@ -900,4 +910,67 @@ class CfgWorlds
          };
       };
    };
+};
+
+class CfgAmmo {
+	class GrenadeHand;
+	class UBmini_Grenade: GrenadeHand
+	{
+		hit=6;
+		indirectHit=6;
+		indirectHitRange=1;
+		dangerRadiusHit=50;
+		suppressionRadiusHit=18;
+		typicalspeed=26;
+		model="\A3\Weapons_f\ammo\mini_frag";
+		whistleDist=12;
+		explosionEffectsRadius=1.5;
+		deflecting=30;
+		class CamShakeExplode
+		{
+			power=3.2;
+			duration=0.80000001;
+			frequency=20;
+			distance=56;
+		};
+		soundHit1[]=
+		{
+			"A3\Sounds_F\arsenal\explosives\grenades\Explosion_mini_grenade_01",
+			3.1622777,
+			1,
+			1300
+		};
+		soundHit2[]=
+		{
+			"A3\Sounds_F\arsenal\explosives\grenades\Explosion_mini_grenade_02",
+			3.1622777,
+			1,
+			1300
+		};
+		soundHit3[]=
+		{
+			"A3\Sounds_F\arsenal\explosives\grenades\Explosion_mini_grenade_03",
+			3.1622777,
+			1,
+			1300
+		};
+		soundHit4[]=
+		{
+			"A3\Sounds_F\arsenal\explosives\grenades\Explosion_mini_grenade_04",
+			3.1622777,
+			1,
+			1300
+		};
+		multiSoundHit[]=
+		{
+			"soundHit1",
+			0.25,
+			"soundHit2",
+			0.25,
+			"soundHit3",
+			0.25,
+			"soundHit4",
+			0.25
+		};
+	};
 };
