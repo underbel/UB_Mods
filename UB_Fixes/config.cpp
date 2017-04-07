@@ -191,10 +191,10 @@ class cfgWeapons
 	
         class kio_skl_msk;
         class kio_skl_msk_death : kio_skl_msk {
-            scope = public;
+            scope = 2;
             weaponPoolAvailable = 1;
             hiddenSelections[] = {"camo"};
-            hiddenSelectionsTextures[] = {"UB_Mods\UB_SND_TEX\textures\skins\headgear\deathstroke.paa"};
+            hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\headgear\deathstroke.paa"};
 	};
 	
 	class hlc_rifle_bcmblackjack;
