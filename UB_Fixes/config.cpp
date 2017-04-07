@@ -53,7 +53,8 @@ class CfgPatches
 			"hlc_rifle_CQBR_skull",
 			"hlc_rifle_honeybase_goldprint",
 			"hlc_rifle_honeybase_paisley",
-			"hlc_rifle_honeybase_skull"
+			"hlc_rifle_honeybase_skull",
+			"arifle_MX_Black_F_rubber"
 		};
             	requiredAddons[]=
 		{
@@ -485,7 +486,28 @@ class cfgWeapons
 		{
 			"\UB_SND_TEX\textures\skins\AR15R\badger\skull\hb_co.paa"
 		};
-	};	
+	};
+	
+	class arifle_MX_Black_F_rubber: arifle_MX_F
+    	{
+        baseWeapon="arifle_MX_Black_F_rubber";     
+        author="Stiglitz";
+        _generalMacro="arifle_MX_Black_F_rubber";      
+        displayName="MX Takedown Rifle";
+        hiddenSelections[]=
+        {
+            "camo1",
+            "camo2"
+        };
+        hiddenSelectionsTextures[]=
+        {
+            "\UB_Mods\UB_SND_TEX\textures\skins\MX_Rubber_Bullet\rubbergun.paa",
+            "\A3\Weapons_F_EPB\Rifles\MX_Black\Data\XMX_short_Black_co.paa"
+        };
+       
+    };
+	
+	
 	class InventoryItem_Base_F;
 	class ItemCore;
 	class UniformItem: InventoryItem_Base_F
@@ -819,6 +841,14 @@ class cfgMods
 	author="76561198116014678";
 	timepacked="1465825539";
 };
+
+class kio_skl_msk_death : kio_skl_msk {
+        scope = public;
+        weaponPoolAvailable = 1;
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"UB_Mods\UB_SND_TEX\textures\skins\headgear\deathstroke.paa"};
+	};
+
 
 class CfgAmmo {
 	class GrenadeHand;
