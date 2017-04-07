@@ -510,7 +510,7 @@ class cfgWeapons
         };
         hiddenSelectionsTextures[]=
         {
-            "\UB_Mods\UB_SND_TEX\textures\skins\MX_Rubber_Bullet\rubbergun.paa",
+            "\UB_SND_TEX\textures\skins\MX_Takedown_Rifle\rubbergun.paa",
             "\A3\Weapons_F_EPB\Rifles\MX_Black\Data\XMX_short_Black_co.paa"
         };
        
