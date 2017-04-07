@@ -487,7 +487,7 @@ class cfgWeapons
 			"\UB_SND_TEX\textures\skins\AR15R\badger\skull\hb_co.paa"
 		};
 	};
-	
+	class arifle_MX_F;
 	class arifle_MX_Black_F_rubber: arifle_MX_F
     	{
         baseWeapon="arifle_MX_Black_F_rubber";     
