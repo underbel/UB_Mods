@@ -842,6 +842,14 @@ class cfgMods
 	timepacked="1465825539";
 };
 
+class kio_skl_msk_death : kio_skl_msk {
+        scope = public;
+        weaponPoolAvailable = 1;
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"PASTE TEXTURE DIR HERE"};
+	};
+
+
 class CfgAmmo {
 	class GrenadeHand;
 	class UBmini_Grenade: GrenadeHand
