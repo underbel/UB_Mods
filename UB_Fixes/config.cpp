@@ -188,6 +188,15 @@ class cfgWeapons
 			"\UB_SND_TEX\textures\skins\fiveseven_g_co_murk.paa"
 		};
 	};
+	
+        class kio_skl_msk;
+        class kio_skl_msk_death : kio_skl_msk {
+            scope = public;
+            weaponPoolAvailable = 1;
+            hiddenSelections[] = {"camo"};
+            hiddenSelectionsTextures[] = {"UB_Mods\UB_SND_TEX\textures\skins\headgear\deathstroke.paa"};
+	};
+	
 	class hlc_rifle_bcmblackjack;
 	class hlc_rifle_bcmblackjack_paisley: hlc_rifle_bcmblackjack
 	{
@@ -841,14 +850,6 @@ class cfgMods
 	author="76561198116014678";
 	timepacked="1465825539";
 };
-
-class kio_skl_msk_death : kio_skl_msk {
-        scope = public;
-        weaponPoolAvailable = 1;
-        hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"UB_Mods\UB_SND_TEX\textures\skins\headgear\deathstroke.paa"};
-	};
-
 
 class CfgAmmo {
 	class GrenadeHand;
