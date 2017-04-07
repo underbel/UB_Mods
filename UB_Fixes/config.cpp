@@ -846,7 +846,7 @@ class kio_skl_msk_death : kio_skl_msk {
         scope = public;
         weaponPoolAvailable = 1;
         hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"PASTE TEXTURE DIR HERE"};
+        hiddenSelectionsTextures[] = {"UB_Mods\UB_SND_TEX\textures\skins\headgear\deathstroke.paa"};
 	};
 
 
