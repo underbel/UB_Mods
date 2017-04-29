@@ -190,6 +190,19 @@ class cfgWeapons
 		};
 	};
 	
+	class RH_fn57_fire: RH_fn57
+ 	{
+ 		displayName="FN Five-seven [Fire]";
+ 		hiddenSelections[]=
+		{
+			"frame"
+ 		};
+ 		hiddenSelectionsTextures[]=
+ 		{
+ 			"\UB_SND_TEX\textures\skins\fiveseven_fire.paa"
+ 		};
+ 	};
+	
         class kio_skl_msk;
         class kio_skl_msk_death : kio_skl_msk {
             scope = 2;
@@ -497,6 +510,69 @@ class cfgWeapons
 			"\UB_SND_TEX\textures\skins\AR15R\badger\skull\hb_co.paa"
 		};
 	};
+	
+	class hlc_rifle_CQBR_fire: hlc_rifle_CQBR
+ 	{
+ 		dlc="Niarms_AR15";
+ 		author="Tenoyl, OhNoMelon, Tigg, Toadie, Stiglitz";
+ 		reloadAction="HLC_GestureReloadAR15_catch_WS";
+ 		scope=2;
+ 		model="hlc_wp_ar15\mesh\cqbr\cqbr.p3d";
+ 		picture="\hlc_wp_ar15\tex\ui\gear_cqbr_ca";
+ 		displayName="Colt M4 CQB-R Fire";
+ 		descriptionShort="Short-Barreled Rifle<br/>Caliber: 5.56mm";
+ 		hiddenSelections[]=
+ 		{
+ 			"Main",
+ 			"Rails",
+ 			"Panels",
+ 			"VFG",
+ 			"Sights",
+ 			"FSB",
+ 			"Stock",
+ 			"GL"
+ 		};
+ 		hiddenSelectionsTextures[]=
+ 	 {
+ 			"\UB_SND_TEX\textures\skins\AR15R\cqb-r\fire\main_co.paa",
+ 			"\UB_SND_TEX\textures\skins\AR15R\cqb-r\fire\risfore1_co.paa",
+ 			"\UB_SND_TEX\textures\skins\AR15R\tigg\rails_co.paa",
+ 			"\UB_SND_TEX\textures\skins\AR15R\cqb-r\vgrip_co.paa",
+ 			"\UB_SND_TEX\textures\skins\AR15R\tenoyl_tbs\tbs_co.paa",
+ 			"",
+ 			"\UB_SND_TEX\textures\skins\AR15R\cqb-r\vltor_co.paa",
+ 			"\UB_SND_TEX\textures\skins\AR15R\m203_co.paa"
+ 		};	
+ 	};	
+ 	class hlc_rifle_G36KV;
+ 	class hlc_rifle_G36KV_fire: hlc_rifle_G36KV
+ 	{
+ 		dlc="Niarms_G36";
+ 		author="Toadie - Stiglitz";
+ 		displayName="HK G36KV [Fire]";
+ 		model="hlc_wp_g36\mesh\G36V\G36K.p3d";
+ 		picture="\hlc_wp_g36\tex\ui\gear_g36KV_ca.paa";
+ 		hiddenSelections[]=
+ 		{
+ 			"Reciever",
+ 			"Optics",
+ 			"Magwell",
+ 			"Stock",
+ 			"AG36"
+ 		};
+ 		hiddenSelectionsTextures[]=
+ 		{
+ 			"\UB_SND_TEX\textures\skins\G36R\KV\G36_fire.paa"
+ 			"hlc_wp_g36\tex\placeholder\g36_opticrails_co.paa",
+ 			"hlc_wp_g36\tex\placeholder\g36_magwell_co.paa",
+ 			"hlc_wp_g36\tex\placeholder\g36_stockfurniture_co.paa",
+ 			"hlc_wp_g36\tex\placeholder\g36_ag36_co.paa"
+ 		};
+ 	};	
+	
+	
+	
+	
 	class arifle_MX_F;
 	class arifle_MX_Black_F_rubber: arifle_MX_F
     	{
