@@ -219,7 +219,7 @@ class cfgWeapons
 	
 	class srifle_DMR_03_F;
         class srifle_DMR_03_Punisher: srifle_DMR_03_F
-    {
+        {
         author="$STR_A3_Bohemia_Interactive";
         _generalMacro="srifle_DMR_03_khaki_F";
         displayName="Punisher";
@@ -235,7 +235,6 @@ class cfgWeapons
             "\UB_SND_TEX\textures\skins\mk1\DMR_03_02.paa",
         };
     };
-};
 	
 	class hlc_rifle_bcmblackjack;
 	class hlc_rifle_bcmblackjack_paisley: hlc_rifle_bcmblackjack
