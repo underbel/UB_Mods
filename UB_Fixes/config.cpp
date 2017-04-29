@@ -522,9 +522,35 @@ class cfgWeapons
 	class UniformItem: InventoryItem_Base_F
 	{
 	};
+	
 	class Uniform_Base: ItemCore
 	{
-	};	
+	};
+	
+	class U_B_CombatUniform_Sigma: Uniform_Base
+	{
+		author="$STR_A3_Bohemia_Interactive";
+		scope=2;
+		displayName="Sigma Suit";
+		picture="\A3\characters_f\data\ui\icon_U_B_CombatUniform_mcam_ca.paa";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\UB_SND_TEX\textures\skins\Uniforms\tiger_cyre.paa"
+		};
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="B_Soldier_F";
+			containerClass="Supply40";
+			mass=40;
+		};
+	};
+	
 	class U_C_Poloshirt_Socceroos: Uniform_Base
 	{
 		author="$STR_A3_Bohemia_Interactive";
