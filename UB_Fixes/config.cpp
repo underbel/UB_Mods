@@ -59,6 +59,7 @@ class CfgPatches
 			"hlc_rifle_honeybase_skull",
 			"arifle_MX_Black_F_rubber",
 			"U_B_CombatUniform_Sigma",
+			"srifle_DMR_03_Punisher"
 			
 			
 		};
@@ -215,6 +216,26 @@ class cfgWeapons
             hiddenSelections[] = {"camo"};
             hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\headgear\deathstroke.paa"};
 	};
+	
+	class srifle_DMR_03_F;
+        class srifle_DMR_03_Punisher: srifle_DMR_03_F
+    {
+        author="$STR_A3_Bohemia_Interactive";
+        _generalMacro="srifle_DMR_03_khaki_F";
+        displayName="Punisher";
+        picture="\A3\Weapons_F_Mark\LongRangeRifles\DMR_03\Data\UI\gear_DMR_03_khaki_X_CA.paa";
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2"
+        };
+        hiddenSelectionsTextures[]=
+        {
+            "\UB_SND_TEX\textures\skins\mk1\DMR_03_01.paa",
+            "\UB_SND_TEX\textures\skins\mk1\DMR_03_02.paa",
+        };
+    };
+};
 	
 	class hlc_rifle_bcmblackjack;
 	class hlc_rifle_bcmblackjack_paisley: hlc_rifle_bcmblackjack
