@@ -587,7 +587,7 @@ class cfgWeapons
  		};
  		hiddenSelectionsTextures[]=
  		{
- 			"\UB_SND_TEX\textures\skins\G36R\KV\G36_fire.paa"
+ 			"\UB_SND_TEX\textures\skins\G36R\KV\G36_fire.paa",
  			"hlc_wp_g36\tex\placeholder\g36_opticrails_co.paa",
  			"hlc_wp_g36\tex\placeholder\g36_magwell_co.paa",
  			"hlc_wp_g36\tex\placeholder\g36_stockfurniture_co.paa",
