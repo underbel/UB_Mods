@@ -32,6 +32,7 @@ class CfgPatches
 		{
 			"RH_fn57_t_murk",
 			"RH_fn57_t_iceman",
+			"RH_fn57_fire",
 			"NovusCopHorn",
 			"srifle_EBR_F_CITY",
 			"U_C_Poloshirt_Socceroos",
@@ -51,11 +52,16 @@ class CfgPatches
 			"hlc_rifle_CQBR_goldprint",
 			"hlc_rifle_CQBR_goldstripe",
 			"hlc_rifle_CQBR_skull",
+			"hlc_rifle_CQBR_fire",
+			"hlc_rifle_G36KV_fire",
 			"hlc_rifle_honeybase_goldprint",
 			"hlc_rifle_honeybase_paisley",
 			"hlc_rifle_honeybase_skull",
 			"arifle_MX_Black_F_rubber",
-			"U_B_CombatUniform_Sigma"
+			"U_B_CombatUniform_Sigma",
+			"srifle_DMR_03_Punisher"
+			
+			
 		};
             	requiredAddons[]=
 		{
@@ -190,6 +196,19 @@ class cfgWeapons
 		};
 	};
 	
+	class RH_fn57_fire: RH_fn57
+ 	{
+ 		displayName="FN Five-seven [Fire]";
+ 		hiddenSelections[]=
+		{
+			"frame"
+ 		};
+ 		hiddenSelectionsTextures[]=
+ 		{
+ 			"\UB_SND_TEX\textures\skins\pistols\fiveseven_fire.paa"
+ 		};
+ 	};
+	
         class kio_skl_msk;
         class kio_skl_msk_death : kio_skl_msk {
             scope = 2;
@@ -197,6 +216,25 @@ class cfgWeapons
             hiddenSelections[] = {"camo"};
             hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\headgear\deathstroke.paa"};
 	};
+	
+	class srifle_DMR_03_F;
+        class srifle_DMR_03_Punisher: srifle_DMR_03_F
+        {
+        author="$STR_A3_Bohemia_Interactive";
+        _generalMacro="srifle_DMR_03_khaki_F";
+        displayName="Punisher";
+        picture="\A3\Weapons_F_Mark\LongRangeRifles\DMR_03\Data\UI\gear_DMR_03_khaki_X_CA.paa";
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2"
+        };
+        hiddenSelectionsTextures[]=
+        {
+            "\UB_SND_TEX\textures\skins\mk1\DMR_03_01.paa",
+            "\UB_SND_TEX\textures\skins\mk1\DMR_03_02.paa"
+        };
+    };
 	
 	class hlc_rifle_bcmblackjack;
 	class hlc_rifle_bcmblackjack_paisley: hlc_rifle_bcmblackjack
@@ -497,6 +535,69 @@ class cfgWeapons
 			"\UB_SND_TEX\textures\skins\AR15R\badger\skull\hb_co.paa"
 		};
 	};
+	
+	class hlc_rifle_CQBR_fire: hlc_rifle_CQBR
+ 	{
+ 		dlc="Niarms_AR15";
+ 		author="Tenoyl, OhNoMelon, Tigg, Toadie, Stiglitz";
+ 		reloadAction="HLC_GestureReloadAR15_catch_WS";
+ 		scope=2;
+ 		model="hlc_wp_ar15\mesh\cqbr\cqbr.p3d";
+ 		picture="\hlc_wp_ar15\tex\ui\gear_cqbr_ca";
+ 		displayName="Colt M4 CQB-R Fire";
+ 		descriptionShort="Short-Barreled Rifle<br/>Caliber: 5.56mm";
+ 		hiddenSelections[]=
+ 		{
+ 			"Main",
+ 			"Rails",
+ 			"Panels",
+ 			"VFG",
+ 			"Sights",
+ 			"FSB",
+ 			"Stock",
+ 			"GL"
+ 		};
+ 		hiddenSelectionsTextures[]=
+ 	 {
+ 			"\UB_SND_TEX\textures\skins\AR15R\cqb-r\fire\main_co.paa",
+ 			"\UB_SND_TEX\textures\skins\AR15R\cqb-r\fire\risfore1_co.paa",
+ 			"\UB_SND_TEX\textures\skins\AR15R\tigg\rails_co.paa",
+ 			"\UB_SND_TEX\textures\skins\AR15R\cqb-r\vgrip_co.paa",
+ 			"\UB_SND_TEX\textures\skins\AR15R\tenoyl_tbs\tbs_co.paa",
+ 			"",
+ 			"\UB_SND_TEX\textures\skins\AR15R\cqb-r\vltor_co.paa",
+ 			"\UB_SND_TEX\textures\skins\AR15R\m203_co.paa"
+ 		};	
+ 	};	
+ 	class hlc_rifle_G36KV;
+ 	class hlc_rifle_G36KV_fire: hlc_rifle_G36KV
+ 	{
+ 		dlc="Niarms_G36";
+ 		author="Toadie - Stiglitz";
+ 		displayName="HK G36KV [Fire]";
+ 		model="hlc_wp_g36\mesh\G36V\G36K.p3d";
+ 		picture="\hlc_wp_g36\tex\ui\gear_g36KV_ca.paa";
+ 		hiddenSelections[]=
+ 		{
+ 			"Reciever",
+ 			"Optics",
+ 			"Magwell",
+ 			"Stock",
+ 			"AG36"
+ 		};
+ 		hiddenSelectionsTextures[]=
+ 		{
+ 			"\UB_SND_TEX\textures\skins\G36R\KV\G36_fire.paa"
+ 			"hlc_wp_g36\tex\placeholder\g36_opticrails_co.paa",
+ 			"hlc_wp_g36\tex\placeholder\g36_magwell_co.paa",
+ 			"hlc_wp_g36\tex\placeholder\g36_stockfurniture_co.paa",
+ 			"hlc_wp_g36\tex\placeholder\g36_ag36_co.paa"
+ 		};
+ 	};	
+	
+	
+	
+	
 	class arifle_MX_F;
 	class arifle_MX_Black_F_rubber: arifle_MX_F
     	{
