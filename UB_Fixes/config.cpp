@@ -232,7 +232,7 @@ class cfgWeapons
         hiddenSelectionsTextures[]=
         {
             "\UB_SND_TEX\textures\skins\mk1\DMR_03_01.paa",
-            "\UB_SND_TEX\textures\skins\mk1\DMR_03_02.paa",
+            "\UB_SND_TEX\textures\skins\mk1\DMR_03_02.paa"
         };
     };
 	
