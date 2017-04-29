@@ -32,6 +32,7 @@ class CfgPatches
 		{
 			"RH_fn57_t_murk",
 			"RH_fn57_t_iceman",
+			"RH_fn57_fire",
 			"NovusCopHorn",
 			"srifle_EBR_F_CITY",
 			"U_C_Poloshirt_Socceroos",
@@ -51,11 +52,15 @@ class CfgPatches
 			"hlc_rifle_CQBR_goldprint",
 			"hlc_rifle_CQBR_goldstripe",
 			"hlc_rifle_CQBR_skull",
+			"hlc_rifle_CQBR_fire",
+			"hlc_rifle_G36KV_fire",
 			"hlc_rifle_honeybase_goldprint",
 			"hlc_rifle_honeybase_paisley",
 			"hlc_rifle_honeybase_skull",
 			"arifle_MX_Black_F_rubber",
-			"U_B_CombatUniform_Sigma"
+			"U_B_CombatUniform_Sigma",
+			
+			
 		};
             	requiredAddons[]=
 		{
