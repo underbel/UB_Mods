@@ -54,7 +54,8 @@ class CfgPatches
 			"hlc_rifle_honeybase_goldprint",
 			"hlc_rifle_honeybase_paisley",
 			"hlc_rifle_honeybase_skull",
-			"arifle_MX_Black_F_rubber"
+			"arifle_MX_Black_F_rubber",
+			"U_B_CombatUniform_Sigma"
 		};
             	requiredAddons[]=
 		{
