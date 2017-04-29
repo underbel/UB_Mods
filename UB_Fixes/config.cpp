@@ -204,7 +204,7 @@ class cfgWeapons
  		};
  		hiddenSelectionsTextures[]=
  		{
- 			"\UB_SND_TEX\textures\skins\fiveseven_fire.paa"
+ 			"\UB_SND_TEX\textures\skins\pistols\fiveseven_fire.paa"
  		};
  	};
 	
