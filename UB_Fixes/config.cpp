@@ -77,6 +77,16 @@ class CfgPatches
 };
 class cfgVehicles
 {
+	class House_F;
+	class Land_greyhouse: House_F {
+	    numberOfDoors=8;
+	};
+	class Land_aus2storyhouse: House_F {
+	    numberOfDoors=5;
+	};
+	class Land_squarehouse: House_F {
+	    numberOfDoors=5;
+	};
 	class A3L_Charger_base;
 	class A3L_PuntoBlue: A3L_Charger_base
 	{
