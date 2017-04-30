@@ -170,7 +170,19 @@ class cfgVehicles
 		hiddenSelections[] = {"camo","insignia"};
 		hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\AOR2_AL.paa",""};
 		hiddenSelectionsMaterials[] = {"tryk_unit\data\clothing1.rvmat",""};
-	};		
+	};
+	class B_Soldier_F;
+	class B_Soldier_Sigma: B_Soldier_F
+	{
+		author="$STR_A3_Bohemia_Interactive";
+		editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\B_Soldier_F.jpg";
+		_generalMacro="B_Soldier_Sigma";
+		scope=2;
+		displayName="Sigma Suit";
+		uniformClass="U_B_CombatUniform_Sigma";
+		hiddenSelections[] = {"camo","insignia"};
+		hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\Uniforms\tiger_cyre.paa",""};		
+	};	
 };
 class cfgWeapons
 {
@@ -657,7 +669,7 @@ class cfgWeapons
 		class ItemInfo: UniformItem
 		{
 			uniformModel="-";
-			uniformClass="B_Soldier_F";
+			uniformClass="B_Soldier_Sigma";
 			containerClass="Supply40";
 			mass=40;
 		};
