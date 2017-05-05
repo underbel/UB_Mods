@@ -933,7 +933,7 @@ class cfgWeapons
         	};
         	hiddenSelectionsTextures[]=
         	{
-            		"\testing\data\tiger_vest.paa"
+            		"\UB_SND_TEX\textures\skins\Vests\tiger_vest.paa"
         	};
         	class ItemInfo: VestItem
         	{
