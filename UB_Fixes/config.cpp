@@ -59,7 +59,8 @@ class CfgPatches
 			"hlc_rifle_honeybase_skull",
 			"arifle_MX_Black_F_rubber",
 			"U_B_CombatUniform_Sigma",
-			"srifle_DMR_03_Punisher"
+			"srifle_DMR_03_Punisher",
+			"V_PlateCarrierH_CTRG_sigma"
 			
 			
 		};
@@ -919,6 +920,32 @@ class cfgWeapons
 	class V_PlateCarrierIA1_dgtl: Vest_NoCamo_Base {};
 	class V_PlateCarrierIA2_dgtl: V_PlateCarrierIA1_dgtl {};
 	class VestItem: InventoryItem_Base_F {};
+	class V_PlateCarrier2_rgr;
+	class V_PlateCarrierH_CTRG_sigma: V_PlateCarrier2_rgr
+	{
+        	author="$STR_A3_Bohemia_Interactive";
+        	_generalMacro="V_PlateCarrierH_CTRG";
+        	picture="\A3\Characters_F_EPA\Data\ui\Icon_V_plate_carrier_snake_ca.paa";
+        	displayName="Sigma's Vest";
+        	hiddenSelections[]=
+        	{
+            		"camo"
+        	};
+        	hiddenSelectionsTextures[]=
+        	{
+            		"\testing\data\tiger_vest.paa"
+        	};
+        	class ItemInfo: VestItem
+        	{
+            		containerClass="Supply120";
+			mass=80;
+            		uniformModel="\A3\Characters_F\BLUFOR\equip_b_vest01.p3d";
+            		hiddenSelections[]=
+            		{
+                		"camo"
+            		};
+        	};
+    	};
 	class V_PlateCarrierIAGL_dgtl_aladeen: V_PlateCarrierIA2_dgtl
 	{
 		author = "$STR_A3_Bohemia_Interactive";
