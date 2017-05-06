@@ -177,62 +177,64 @@ class cfgVehicles
 };
 class cfgWeapons
 {
-	class Pistol;	
-	class Pistol_Base_F: Pistol {};	
-	class RH_Pistol_Base_F: Pistol_Base_F {};	
-	class RH_fnp45: RH_Pistol_Base_F {};	
+    class Pistol;	
+    class Pistol_Base_F: Pistol {};	
+    class RH_Pistol_Base_F: Pistol_Base_F {};	
+    class RH_fnp45: RH_Pistol_Base_F {};	
     class RH_fn57: RH_fnp45	{};
-	class RH_fn57_t_iceman: RH_fn57
+    class RH_fn57_t_iceman: RH_fn57
+    {
+	author="RobertHammer";
+	displayName="FN Five-seven Iceman";
+	hiddenSelections[]=
 	{
-		author="RobertHammer";
-		displayName="FN Five-seven Iceman";
-		hiddenSelections[]=
-		{
-			"frame"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"\UB_SND_TEX\textures\skins\fiveseven_g_co_iceman.paa"
-		};
+	    "frame"
 	};
-	class RH_fn57_t_murk: RH_fn57
+	hiddenSelectionsTextures[]=
 	{
-		author="RobertHammer";
-		displayName="FN Five-seven Murk";
-		hiddenSelections[]=
-		{
-			"frame"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"\UB_SND_TEX\textures\skins\fiveseven_g_co_murk.paa"
-		};
+	    "\UB_SND_TEX\textures\skins\fiveseven_g_co_iceman.paa"
 	};
+    };
 	
-	class RH_fn57_fire: RH_fn57
- 	{
- 		displayName="FN Five-seven [Fire]";
- 		hiddenSelections[]=
-		{
-			"frame"
- 		};
- 		hiddenSelectionsTextures[]=
- 		{
- 			"\UB_SND_TEX\textures\skins\pistols\fiveseven_fire.paa"
- 		};
+    class RH_fn57_t_murk: RH_fn57
+    {
+	author="RobertHammer";
+	displayName="FN Five-seven Murk";
+	hiddenSelections[]=
+	{
+	    "frame"
+	};
+	hiddenSelectionsTextures[]=
+	{
+	    "\UB_SND_TEX\textures\skins\fiveseven_g_co_murk.paa"
+	};
+    };
+	
+    class RH_fn57_fire: RH_fn57
+    {
+ 	displayName="FN Five-seven [Fire]";
+ 	hiddenSelections[]=
+	{
+	    "frame"
  	};
+ 	hiddenSelectionsTextures[]=
+ 	{
+ 	    "\UB_SND_TEX\textures\skins\pistols\fiveseven_fire.paa"
+ 	};
+    };
 	
-        class kio_skl_msk;
-        class kio_skl_msk_death : kio_skl_msk {
-            scope = 2;
-            weaponPoolAvailable = 1;
-            hiddenSelections[] = {"camo"};
-            hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\headgear\deathstroke.paa"};
-	};
+    class kio_skl_msk;
+    class kio_skl_msk_death : kio_skl_msk 
+    {
+        scope = 2;
+        weaponPoolAvailable = 1;
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\headgear\deathstroke.paa"};
+    };
 	
-	class srifle_DMR_03_F;
-        class srifle_DMR_03_Punisher: srifle_DMR_03_F
-        {
+    class srifle_DMR_03_F;
+    class srifle_DMR_03_Punisher: srifle_DMR_03_F
+    {
         author="$STR_A3_Bohemia_Interactive";
         _generalMacro="srifle_DMR_03_khaki_F";
         displayName="Punisher";
@@ -249,23 +251,23 @@ class cfgWeapons
         };
     };
 	
-	class hlc_rifle_bcmblackjack;
-	class hlc_rifle_bcmblackjack_paisley: hlc_rifle_bcmblackjack
+    class hlc_rifle_bcmblackjack;
+    class hlc_rifle_bcmblackjack_paisley: hlc_rifle_bcmblackjack
+    {
+	author="Sephiris, Agent95, Toadie, Stiglitz";	
+	model="hlc_wp_ar15\mesh\JackCarbine\samr.p3d";
+	picture="\hlc_wp_ar15\tex\ui\gear_jack_ca";
+	displayName="BCM 'Black-Jack' Paisley";
+	descriptionShort="Assault rifle<br/>Caliber: .300 Blackout"; 
+	hiddenSelections[]=
 	{
-		author="Sephiris, Agent95, Toadie, Stiglitz";	
-		model="hlc_wp_ar15\mesh\JackCarbine\samr.p3d";
-		picture="\hlc_wp_ar15\tex\ui\gear_jack_ca";
-		displayName="BCM 'Black-Jack' Paisley";
-		descriptionShort="Assault rifle<br/>Caliber: .300 Blackout"; 
-		hiddenSelections[]=
-		{
-			"Upper",
-			"Lower",
-			"Foregrip",
-			"foregrip_rail",
-			"Sights",
-			"Stock"
-		};
+	    "Upper",
+	    "Lower",
+	    "Foregrip",
+	    "foregrip_rail",
+	    "Sights",
+	    "Stock"
+        };
 		hiddenSelectionsTextures[]=
 		{
 			"\UB_SND_TEX\textures\skins\AR15R\blackjack\paisley_black\upper_co.paa",
@@ -607,10 +609,7 @@ class cfgWeapons
  			"hlc_wp_g36\tex\placeholder\g36_ag36_co.paa"
  		};
  	};	
-	
-	
-	
-	
+		
 	class arifle_MX_F;
 	class arifle_MX_Black_F_rubber: arifle_MX_F
     	{
@@ -631,6 +630,41 @@ class cfgWeapons
        
     };
 	
+	class MMG_01_base_F;
+	class MMG_01_tan_FREZ: MMG_01_base_F
+	{
+		author="$STR_A3_Bohemia_Interactive";
+		_generalMacro="MMG_01_tan_F";
+		displayName="Nerd Navid";
+		scope = 2;
+		picture="\A3\Weapons_F_Mark\Machineguns\MMG_01\Data\UI\gear_MMG_01_tan_X_co.paa";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3"
+		};		
+		hiddenSelectionsTextures[]=
+		{
+			"\UB_SND_TEX\textures\skins\navid\MMG_01_01_sand_CO1.paa",
+			"\UB_SND_TEX\textures\skins\navid\MMG_01_02_sand_CO2.paa",
+			"\UB_SND_TEX\textures\skins\navid\MMG_01_03_sand_CO1.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"\A3\Weapons_F_Mark\Machineguns\MMG_01\Data\MMG_01_01_sand.rvmat",
+			"\A3\Weapons_F_Mark\Machineguns\MMG_01\Data\MMG_01_02_sand.rvmat",
+			"\A3\Weapons_F_Mark\Machineguns\MMG_01\Data\MMG_01_03_sand.rvmat"
+		};
+		class LinkedItems
+		{
+			class LinkedItemsUnder
+			{
+				slot="UnderBarrelSlot";
+				item="bipod_02_F_tan";
+			};
+		};
+	};	
 	
 	class InventoryItem_Base_F;
 	class ItemCore;
