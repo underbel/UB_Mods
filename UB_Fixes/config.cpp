@@ -1,34 +1,37 @@
 #include "BIS_AddonInfo.hpp"
 class CfgPatches
 {
-	class A3_Characters_F_Civil
+    class A3_Characters_F_Civil
+    {
+	addonRootClass="A3_Characters_F";
+	requiredAddons[]=
 	{
-		addonRootClass="A3_Characters_F";
-		requiredAddons[]=
-		{
-			"A3_Characters_F",
-			"A3_Data_F",
-			"A3_Weapons_F",
-			"A3_UI_F",
-			"A3_Anims_F",
-			"A3_Anims_F_Config_Sdr",
-			"asdg_jointrails",
-			"hlcweapons_core",
-			"hlcweapons_ar15"			
-		};
-		requiredVersion=0.1;
-		units[]={
-			"C_man_polo_2_Subway",
-			"C_man_polo_2_Socceroos",
-			"C_man_polo_2_Dkfc",
-			"C_man_polo_2_F_Subby",
-			"B_AOR2_F_AL"
-		};
-		weapons[]={};
-	};	
-	class A3_Weapons_F
+	    "A3_Characters_F",
+	    "A3_Data_F",
+	    "A3_Weapons_F",
+	    "A3_UI_F",
+	    "A3_Anims_F",
+	    "A3_Anims_F_Config_Sdr",
+	    "asdg_jointrails",
+	    "hlcweapons_core",
+	    "hlcweapons_ar15",
+	    "A3_Weapons_F_Mark"
+	};
+	requiredVersion=0.1;
+	units[]=
 	{
-		weapons[]=
+	    "C_man_polo_2_Subway",
+	    "C_man_polo_2_Socceroos",
+	    "C_man_polo_2_Dkfc",
+	    "C_man_polo_2_F_Subby",
+	    "B_AOR2_F_AL"
+	};
+	weapons[]={};
+    };	
+	
+    class A3_Weapons_F
+    {
+	weapons[]=
 		{
 			"RH_fn57_t_murk",
 			"RH_fn57_t_iceman",
@@ -61,8 +64,7 @@ class CfgPatches
 			"U_B_CombatUniform_Sigma",
 			"srifle_DMR_03_Punisher",
 			"V_PlateCarrierH_CTRG_sigma"
-			
-			
+			"MMG_01_tan_FREZ"
 		};
             	requiredAddons[]=
 		{
