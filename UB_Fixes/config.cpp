@@ -63,7 +63,7 @@ class CfgPatches
 			"arifle_MX_Black_F_rubber",
 			"U_B_CombatUniform_Sigma",
 			"srifle_DMR_03_Punisher",
-			"V_PlateCarrierH_CTRG_sigma"
+			"V_PlateCarrierH_CTRG_sigma",
 			"MMG_01_tan_FREZ"
 		};
             	requiredAddons[]=
