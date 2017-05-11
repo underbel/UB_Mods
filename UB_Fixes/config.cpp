@@ -64,6 +64,7 @@ class CfgPatches
 			"U_B_CombatUniform_Sigma",
 			"srifle_DMR_03_Punisher",
 			"V_PlateCarrierH_CTRG_sigma",
+			"hlc_rifle_akm_aladeen",
 			"MMG_01_tan_FREZ"
 		};
             	requiredAddons[]=
@@ -610,7 +611,31 @@ class cfgWeapons
  			"hlc_wp_g36\tex\placeholder\g36_stockfurniture_co.paa",
  			"hlc_wp_g36\tex\placeholder\g36_ag36_co.paa"
  		};
- 	};	
+ 	};
+
+	class hlc_rifle_akm_MTK;
+	class hlc_rifle_akm_aladeen: hlc_rifle_akm_MTK
+	{
+		dlc="Niarms_AK";
+		deployedPivot="deploypivot";
+		scope=2;
+		author="MrRifleman, Bull5hit, Toadie, Stiglitz";
+		displayName="Стрелок Пушка";
+		model="\hlc_wp_ak\mesh\akm\akm.p3d";
+		picture="\hlc_wp_ak\tex\ui\gear_akm_x_ca";
+		hiddenSelections[]=
+		{
+			"Main",
+			"Dovetail",
+			"Mount"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\UB_Mods\UB_SND_TEX\textures\skins\AK\aladeen_akm.paa",
+			"hlc_wp_ak\tex\rifleman_ak74\mount_co.paa",
+			"hlc_wp_ak\tex\rrxviii_mtk83\mtk-83_co.paa"
+		};
+	};	
 		
 	class arifle_MX_F;
 	class arifle_MX_Black_F_rubber: arifle_MX_F
