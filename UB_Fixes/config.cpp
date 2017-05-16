@@ -631,7 +631,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\UB_Mods\UB_SND_TEX\textures\skins\AK\aladeen_akm.paa",
+			"\UB_SND_TEX\textures\skins\AK\aladeen_akm.paa",
 			"hlc_wp_ak\tex\rifleman_ak74\mount_co.paa",
 			"hlc_wp_ak\tex\rrxviii_mtk83\mtk-83_co.paa"
 		};
