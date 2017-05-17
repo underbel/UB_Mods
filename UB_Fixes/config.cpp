@@ -24,7 +24,11 @@ class CfgPatches
 	    "C_man_polo_2_Socceroos",
 	    "C_man_polo_2_Dkfc",
 	    "C_man_polo_2_F_Subby",
-	    "B_AOR2_F_AL"
+	    "B_AOR2_F_AL",
+		"UB_NRL_broncos",
+		"UB_NRL_rabbitohs",
+		"UB_NRL_roosters"
+		
 	};
 	weapons[]={};
     };	
@@ -38,6 +42,9 @@ class CfgPatches
 			"RH_fn57_fire",
 			"NovusCopHorn",
 			"srifle_EBR_F_CITY",
+			"UB_NRL_broncos",
+			"UB_NRL_rabbitohs",
+			"UB_NRL_roosters"
 			"U_C_Poloshirt_Socceroos",
 			"U_C_Poloshirt_Dkfc",
 			"U_C_Poloshirt_Subway",
@@ -91,6 +98,41 @@ class cfgVehicles
 	class Civilian: CAManBase {};
 	class Civilian_F: Civilian {};
 	class C_man_1: Civilian_F {};	
+	class UB_NRL_roosters : C_man_1 {
+		_generalMacro = "UB_NRL_roosters";
+		editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\C_man_polo_1_F.jpg";
+		scope = public;
+		nakedUniform = "U_BasicBody";
+		uniformClass = "UB_NRL_roosters_shirt";
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\NRL_Clothing\UB_NRL_roosters.paa"};
+		displayName = "Roosters NRL";
+		author = "Tonnie";
+	};
+
+	class UB_NRL_rabbitohs : C_man_1 {
+		_generalMacro = "UB_NRL_rabbitohs";
+		editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\C_man_polo_1_F.jpg";
+		scope = public;
+		nakedUniform = "U_BasicBody";
+		uniformClass = "UB_NRL_rabbitohs_shirt";
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\NRL_Clothing\UB_NRL_rabbitohs.paa"};
+		displayName = "Rabbitohs NRL";
+		author = "Tonnie";
+	};
+
+	class UB_NRL_broncos : C_man_1 {
+		_generalMacro = "UB_NRL_broncos";
+		editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\C_man_polo_1_F.jpg";
+		scope = public;
+		nakedUniform = "U_BasicBody";
+		uniformClass = "UB_NRL_broncos_shirt";
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\NRL_Clothing\UB_NRL_broncos.paa"};
+		displayName = "Broncos NRL";
+		author = "Tonnie";
+	};
 	class C_man_polo_2_Subway: C_man_1
 	{
 		author="$STR_A3_Bohemia_Interactive";
@@ -726,7 +768,49 @@ class cfgWeapons
 			mass=40;
 		};
 	};
-	
+		class UB_NRL_roosters_shirt : Uniform_Base {
+		scope = public;
+		author="Tonnie";
+		displayName = "Roosters NRL";
+		picture = "\UB_SND_TEX\textures\skins\NRL_Clothing\roosters_ui.paa";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		
+		class ItemInfo : UniformItem {
+			uniformModel = "-";
+			uniformClass = "UB_NRL_roosters";
+			containerClass = "Supply40";
+			mass = 20;
+		};
+	};
+	class UB_NRL_rabbitohs_shirt : Uniform_Base {
+		scope = public;
+		author="Tonnie";
+		displayName = "Rabbitohs NRL";
+		picture = "\UB_SND_TEX\textures\skins\NRL_Clothing\rabbitohs_ui.paa";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		
+		class ItemInfo : UniformItem {
+			uniformModel = "-";
+			uniformClass = "UB_NRL_rabbitohs";
+			containerClass = "Supply40";
+			mass = 20;
+		};
+	};
+
+	class UB_NRL_broncos_shirt : Uniform_Base {
+		scope = public;
+		author="Tonnie";
+		displayName = "Broncos NRL";
+		picture = "\UB_SND_TEX\textures\skins\NRL_Clothing\broncos_ui.paa";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		
+		class ItemInfo : UniformItem {
+			uniformModel = "-";
+			uniformClass = "UB_NRL_broncos";
+			containerClass = "Supply40";
+			mass = 20;
+		};
+	};
 	class U_C_Poloshirt_Socceroos: Uniform_Base
 	{
 		author="$STR_A3_Bohemia_Interactive";
