@@ -28,7 +28,6 @@ class CfgPatches
 	    "UB_NRL_broncos",
 	    "UB_NRL_rabbitohs",
 	    "UB_NRL_roosters"
-		
 	};
 	weapons[]={};
     };	
@@ -44,7 +43,7 @@ class CfgPatches
 			"srifle_EBR_F_CITY",
 			"UB_NRL_broncos",
 			"UB_NRL_rabbitohs",
-			"UB_NRL_roosters"
+			"UB_NRL_roosters",
 			"U_C_Poloshirt_Socceroos",
 			"U_C_Poloshirt_Dkfc",
 			"U_C_Poloshirt_Subway",
