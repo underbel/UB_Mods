@@ -108,8 +108,6 @@ class cfgVehicles
 		displayName = "Roosters NRL";
 		author = "Tonnie";
 	};
-
-	class UB_NRL_rabbitohs : C_man_1 {
 		_generalMacro = "UB_NRL_rabbitohs";
 		editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\C_man_polo_1_F.jpg";
 		scope = public;
@@ -120,8 +118,6 @@ class cfgVehicles
 		displayName = "Rabbitohs NRL";
 		author = "Tonnie";
 	};
-
-	class UB_NRL_broncos : C_man_1 {
 		_generalMacro = "UB_NRL_broncos";
 		editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\C_man_polo_1_F.jpg";
 		scope = public;
