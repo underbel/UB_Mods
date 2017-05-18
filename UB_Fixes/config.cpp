@@ -25,9 +25,9 @@ class CfgPatches
 	    "C_man_polo_2_Dkfc",
 	    "C_man_polo_2_F_Subby",
 	    "B_AOR2_F_AL",
-		"UB_NRL_broncos",
-		"UB_NRL_rabbitohs",
-		"UB_NRL_roosters"
+	    "UB_NRL_broncos",
+	    "UB_NRL_rabbitohs",
+	    "UB_NRL_roosters"
 		
 	};
 	weapons[]={};
