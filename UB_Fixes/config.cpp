@@ -27,7 +27,8 @@ class CfgPatches
 	    "B_AOR2_F_AL",
 	    "UB_NRL_broncos",
 	    "UB_NRL_rabbitohs",
-	    "UB_NRL_roosters"
+	    "UB_NRL_roosters",
+		"UB_Custom_PilotWhite"
 	};
 	weapons[]={};
     };	
@@ -44,6 +45,7 @@ class CfgPatches
 			"UB_NRL_broncos",
 			"UB_NRL_rabbitohs",
 			"UB_NRL_roosters",
+			"UB_Custom_PilotWhite",
 			"U_C_Poloshirt_Socceroos",
 			"U_C_Poloshirt_Dkfc",
 			"U_C_Poloshirt_Subway",
@@ -97,6 +99,17 @@ class cfgVehicles
 	class Civilian: CAManBase {};
 	class Civilian_F: Civilian {};
 	class C_man_1: Civilian_F {};	
+	class UB_Custom_PilotWhite : C_man_1 {
+		_generalMacro = "UB_Custom_PilotWhite";
+		editorPreview="\k_suits\data\UI_suits.paa";
+		scope = public;
+		nakedUniform = "U_BasicBody";
+		uniformClass = "UB_Custom_Pilot_Uniform_White";
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\Uniforms\UB_Custom_PilotWhite.co.paa"};
+		displayName = "ASSASSIN8ED Uniform";
+		author = "Tonnie";
+	};
 	class UB_NRL_roosters : C_man_1 {
 		_generalMacro = "UB_NRL_roosters";
 		editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\C_man_polo_1_F.jpg";
@@ -765,13 +778,25 @@ class cfgWeapons
 			mass=40;
 		};
 	};
+		class UB_Custom_Pilot_Uniform_White : Uniform_Base {
+		scope = public;
+		author="Tonnie";
+		displayName = "ASSASSIN8ED Uniform";
+		picture = "\k_suits\data\UI_suits.paa";
+		model = "\k_suits\data\suits.p3d";
+		class ItemInfo : UniformItem {
+			uniformModel = "-";
+			uniformClass = "UB_Custom_PilotWhite";
+			containerClass = "Supply60";
+			mass = 20;
+		};
+	};
 		class UB_NRL_roosters_shirt : Uniform_Base {
 		scope = public;
 		author="Tonnie";
 		displayName = "Roosters NRL";
 		picture = "\UB_SND_TEX\textures\skins\NRL_Clothing\roosters_ui.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
-		
 		class ItemInfo : UniformItem {
 			uniformModel = "-";
 			uniformClass = "UB_NRL_roosters";
@@ -785,7 +810,6 @@ class cfgWeapons
 		displayName = "Rabbitohs NRL";
 		picture = "\UB_SND_TEX\textures\skins\NRL_Clothing\rabbitohs_ui.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
-		
 		class ItemInfo : UniformItem {
 			uniformModel = "-";
 			uniformClass = "UB_NRL_rabbitohs";
