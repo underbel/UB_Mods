@@ -28,7 +28,7 @@ class CfgPatches
 	    "UB_NRL_broncos",
 	    "UB_NRL_rabbitohs",
 	    "UB_NRL_roosters",
-		"UB_Custom_PilotWhite"
+	    "UB_Custom_PilotWhite"
 	};
 	weapons[]={};
     };	
