@@ -747,6 +747,7 @@ class cfgWeapons
 	
 	class InventoryItem_Base_F;
 	class ItemCore;
+	class HeadgearItem;
 	class UniformItem: InventoryItem_Base_F
 	{
 	};
@@ -789,6 +790,25 @@ class cfgWeapons
 			uniformClass = "UB_Custom_PilotWhite";
 			containerClass = "Supply60";
 			mass = 20;
+		};
+	};
+		class UB_Pilot_Hat_Custom : ItemCore 
+	{
+		author = "James Jalal";
+		scope = public;
+		displayName = "ASSASSIN8ED Hat";
+		picture = "\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		model = "\johnny_payday_masks\data\general0.p3d";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\headgear\UB_Custom_General_Cap_co.paa"};
+		class ItemInfo : HeadgearItem 
+		{
+			mass = 6;
+			uniformModel = "\johnny_payday_masks\data\general0.p3d";
+			modelSides[] = {3, 1};
+			armor = 0;
+			passThrough = 1;
+			hiddenSelections[] = {"camo"};
 		};
 	};
 		class UB_NRL_roosters_shirt : Uniform_Base {
