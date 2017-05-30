@@ -1,0 +1,54 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: Produced from mikero's Dos Tools Dll version 6.10
+//'now' is Sat Apr 08 12:40:24 2017 : 'file' last modified on Fri Aug 12 15:59:46 2016
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+//Class Jonzie_Carpack : UB_SND_TEX2\textures\cop_skins\gd_skins\UB_AFP_Patrol_white.rvmat{
+ambient[] = {1,1,1,3.3};
+diffuse[] = {1.0,1.0,1.0,1};
+forcedDiffuse[] = {0,0,0,0};
+emmisive[] = {0,0,0,1};
+specular[] = {0.5,0.5,0.5,1};
+specularPower = 250;
+PixelShaderID = "Super";
+VertexShaderID = "Super";
+class Stage1
+{
+	texture = "#(argb,8,8,3)color(0.501961,0.501961,1,1.0,NOHQ)";
+	uvSource = "tex";
+};
+class Stage2
+{
+	texture = "#(argb,8,8,3)color(0.5,0.5,0.5,0.5,DT)";
+	uvSource = "tex";
+};
+class Stage3
+{
+	texture = "";
+	uvSource = "tex";
+};
+class Stage4
+{
+	texture = "#(argb,8,8,3)color(1,1,1,1,AS)";
+	uvSource = "tex";
+};
+class Stage5
+{
+	texture = "#(argb,8,8,3)color(1,0.839216,0.513725,1.0,SMDI)";
+	uvSource = "tex";
+};
+class Stage6
+{
+	texture = "#(ai,64,64,1)fresnel(1.1,0.5)";
+	uvSource = "tex";
+};
+class Stage7
+{
+	texture = "a3\data_f\env_land_ca.paa";
+	uvSource = "tex";
+	useWorldEnvMap = "true";
+};
+//};
