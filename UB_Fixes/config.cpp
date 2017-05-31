@@ -28,7 +28,9 @@ class CfgPatches
 	    "UB_NRL_broncos",
 	    "UB_NRL_rabbitohs",
 	    "UB_NRL_roosters",
-	    "UB_Custom_PilotWhite"
+	    "UB_Custom_PilotWhite",
+		"UB_Custom_RAN_Uniform",
+		"UB_Custom_RAN_SS_Uniform"
 	};
 	weapons[]={};
     };	
@@ -73,7 +75,9 @@ class CfgPatches
 			"srifle_DMR_03_Punisher",
 			"V_PlateCarrierH_CTRG_sigma",
 			"hlc_rifle_akm_aladeen",
-			"MMG_01_tan_FREZ"
+			"MMG_01_tan_FREZ",
+			"UB_Custom_RAN_Uniform",
+			"UB_Custom_RAN_SS_Uniform"
 		};
             	requiredAddons[]=
 		{
@@ -94,11 +98,34 @@ class cfgVehicles
 	{
 	};
 	class Land;
+	class I_Soldier_02_F;
 	class Man: Land {};
 	class CAManBase: Man {};
 	class Civilian: CAManBase {};
 	class Civilian_F: Civilian {};
 	class C_man_1: Civilian_F {};	
+	class UB_Custom_RAN_Uniform : I_Soldier_02_F {
+		_generalMacro = "UB_Custom_RAN_Uniform";
+		editorPreview="\UB_SND_TEX\textures\skins\Uniforms\UI_RAN.paa";
+		scope = public;
+		nakedUniform = "U_BasicBody";
+		uniformClass = "UB_Custom_RAN_Uniform_Class";
+		hiddenSelections[] = {"Camo","Insignia"};
+		hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\Uniforms\UB_Custom_RAN_Uniform_co.paa"};
+		displayName = "Royal Australian Navy Uniform";
+		author = "Tonnie";
+	};
+	class UB_Custom_RAN_SS_Uniform : I_Soldier_02_F {
+		_generalMacro = "UB_Custom_RAN_Uniform";
+		editorPreview="\k_suits\data\UI_suits.paa";
+		scope = public;
+		nakedUniform = "U_BasicBody";
+		uniformClass = "UB_Custom_RAN_Uniform_SS_Class";
+		hiddenSelections[] = {"Camo","Insignia"};
+		hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\Uniforms\UB_Custom_RAN_Uniform_co.paa"};
+		displayName = "Royal Australian Navy Rolled Uniform";
+		author = "Tonnie";
+	};
 	class UB_Custom_PilotWhite : C_man_1 {
 		_generalMacro = "UB_Custom_PilotWhite";
 		editorPreview="\k_suits\data\UI_suits.paa";
@@ -748,6 +775,7 @@ class cfgWeapons
 	class InventoryItem_Base_F;
 	class ItemCore;
 	class HeadgearItem;
+	class Vest_Camo_Base;
 	class UniformItem: InventoryItem_Base_F
 	{
 	};
@@ -777,6 +805,89 @@ class cfgWeapons
 			uniformClass="B_Soldier_Sigma";
 			containerClass="Supply40";
 			mass=40;
+		};
+	};
+	class UB_Custom_RAN_Uniform_Class : Uniform_Base {
+		scope = public;
+		author="Tonnie";
+		displayName = "Royal Australian Navy Uniform";
+		picture = "\UB_SND_TEX\textures\skins\Uniforms\UI_RAN.paa";
+		model = "\A3\characters_f_beta\INDEP\ia_soldier_01.p3d";
+		class ItemInfo : UniformItem {
+			uniformModel = "-";
+			uniformClass = "UB_Custom_RAN_Uniform";
+			containerClass = "Supply80";
+			mass = 20;
+		};
+	};
+		class UB_Custom_RAN_Uniform_SS_Class : Uniform_Base {
+		scope = public;
+		author="Tonnie";
+		displayName = "Royal Australian Navy Rolled Uniform";
+		picture = "\UB_SND_TEX\textures\skins\Uniforms\UI_RAN.paa";
+		model = "\A3\characters_f_beta\INDEP\ia_soldier_02.p3d";
+		class ItemInfo : UniformItem {
+			uniformModel = "-";
+			uniformClass = "UB_Custom_RAN_SS_Uniform";
+			containerClass = "Supply80";
+			mass = 20;
+		};
+	};
+		class UB_Custom_RAN_Cap : ItemCore 	{
+		author = "Tonnie";
+		scope = public;
+		displayName = "Royal Australian Navy Cap";
+		picture = "\UB_SND_TEX\textures\skins\Uniforms\UI_RAN.paa";
+		model = "\A3\Characters_F\common\capb";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\Uniforms\UB_Custom_RAN_Cap_co.paa"};
+		class ItemInfo : HeadgearItem 	{
+			mass = 6;
+			uniformModel = "\A3\Characters_F\common\capb";
+			modelSides[] = {3, 1};
+			armor = 0;
+			passThrough = 1;
+			hiddenSelections[] = {"camo"};
+		};
+	};
+		class UB_Custom_RAN_Vest : Vest_Camo_Base {
+		author = "Tonnie";
+		scope = public;
+		displayName = "Royal Australian Navy Combat Vest";
+		picture = "\UB_SND_TEX\textures\skins\Uniforms\UI_RAN.paa";
+		model = "\SOE\data\DragonfireG2CPL.p3d";
+		hiddenSelections[] = {"camo","camo1"};
+		hiddenSelectionsTextures[] = {"SOE\data\PBDF_BK.paa","\UB_SND_TEX\textures\skins\Uniforms\UB_Custom_RAN_Vest_co.paa"};
+		hiddenSelectionsMaterials[] = {"SOE\data\PBDF.rvmat","SOE\data\PLATE.rvmat"};
+		descriptionShort = "Armor Level III";
+		class ItemInfo: VestItem {
+			uniformModel = "\SOE\data\DragonfireG2CPL.p3d";
+			hiddenSelections[] = {"camo","camo1"};
+			containerClass = "Supply100";
+			mass = 70;
+			armor = 30;
+			class HitpointsProtectionInfo {
+				class Chest {
+					hitpointName	= "HitChest"; 
+					armor		= 20; 
+					passThrough	= 0.1; 
+				};
+				class Diaphragm	{
+					hitpointName	= "HitDiaphragm";
+					armor		= 30;
+					passThrough	= 0.1;
+				};
+				class Abdomen {
+					hitpointName	= "HitAbdomen"; 
+					armor		= 30;
+					passThrough	= 0.1;
+				};
+				class Body {
+					hitpointName	= "HitBody";
+					passThrough	= 0.1;
+				};
+			};
+
 		};
 	};
 		class UB_Custom_Pilot_Uniform_White : Uniform_Base {
