@@ -6,7 +6,7 @@
 
 #define _ARMA_
 
-//Class Jonzie_Carpack : \UB_SND_TEX\textures\cop_skins\gd_skins\UB_AFP_Patrol_black.rvmat{
+//Class Jonzie_Carpack : UB_SND_TEX\textures\cop_skins\gd_skins\UB_AFP_Patrol_black.rvmat{
 ambient[] = {1,1,1,3.3};
 diffuse[] = {1.0,1.0,1.0,1};
 forcedDiffuse[] = {0,0,0,0};
@@ -27,7 +27,7 @@ class Stage2
 };
 class Stage3
 {
-	texture = "\UB_SND_TEX\textures\cop_skins\gd_skins\UB_AFP_Patrol_black.paa";
+	texture = "UB_SND_TEX\textures\cop_skins\gd_skins\UB_AFP_Patrol_black.paa";
 	uvSource = "tex";
 };
 class Stage4
