@@ -850,46 +850,7 @@ class cfgWeapons
 			hiddenSelections[] = {"camo"};
 		};
 	};
-		class UB_Custom_RAN_Vest : Vest_Camo_Base {
-		author = "Tonnie";
-		scope = public;
-		displayName = "Royal Australian Navy Combat Vest";
-		picture = "\UB_SND_TEX\textures\skins\Uniforms\UI_RAN.paa";
-		model = "\SOE\data\DragonfireG2CPL.p3d";
-		hiddenSelections[] = {"camo","camo1"};
-		hiddenSelectionsTextures[] = {"SOE\data\PBDF_BK.paa","\UB_SND_TEX\textures\skins\Uniforms\UB_Custom_RAN_Vest_co.paa"};
-		hiddenSelectionsMaterials[] = {"SOE\data\PBDF.rvmat","SOE\data\PLATE.rvmat"};
-		descriptionShort = "Armor Level III";
-		class ItemInfo: VestItem {
-			uniformModel = "\SOE\data\DragonfireG2CPL.p3d";
-			hiddenSelections[] = {"camo","camo1"};
-			containerClass = "Supply100";
-			mass = 70;
-			armor = 30;
-			class HitpointsProtectionInfo {
-				class Chest {
-					hitpointName	= "HitChest"; 
-					armor		= 20; 
-					passThrough	= 0.1; 
-				};
-				class Diaphragm	{
-					hitpointName	= "HitDiaphragm";
-					armor		= 30;
-					passThrough	= 0.1;
-				};
-				class Abdomen {
-					hitpointName	= "HitAbdomen"; 
-					armor		= 30;
-					passThrough	= 0.1;
-				};
-				class Body {
-					hitpointName	= "HitBody";
-					passThrough	= 0.1;
-				};
-			};
-
-		};
-	};
+		
 		class UB_Custom_Pilot_Uniform_White : Uniform_Base {
 		scope = public;
 		author="Tonnie";
@@ -1243,6 +1204,46 @@ class cfgWeapons
             		};
         	};
     	};
+	class UB_Custom_RAN_Vest : Vest_Camo_Base {
+		author = "Tonnie";
+		scope = public;
+		displayName = "Royal Australian Navy Combat Vest";
+		picture = "\UB_SND_TEX\textures\skins\Uniforms\UI_RAN.paa";
+		model = "\SOE\data\DragonfireG2CPL.p3d";
+		hiddenSelections[] = {"camo","camo1"};
+		hiddenSelectionsTextures[] = {"SOE\data\PBDF_BK.paa","\UB_SND_TEX\textures\skins\Uniforms\UB_Custom_RAN_Vest_co.paa"};
+		hiddenSelectionsMaterials[] = {"SOE\data\PBDF.rvmat","SOE\data\PLATE.rvmat"};
+		descriptionShort = "Armor Level III";
+		class ItemInfo: VestItem {
+			uniformModel = "\SOE\data\DragonfireG2CPL.p3d";
+			hiddenSelections[] = {"camo","camo1"};
+			containerClass = "Supply100";
+			mass = 70;
+			armor = 30;
+			class HitpointsProtectionInfo {
+				class Chest {
+					hitpointName	= "HitChest"; 
+					armor		= 20; 
+					passThrough	= 0.1; 
+				};
+				class Diaphragm	{
+					hitpointName	= "HitDiaphragm";
+					armor		= 30;
+					passThrough	= 0.1;
+				};
+				class Abdomen {
+					hitpointName	= "HitAbdomen"; 
+					armor		= 30;
+					passThrough	= 0.1;
+				};
+				class Body {
+					hitpointName	= "HitBody";
+					passThrough	= 0.1;
+				};
+			};
+
+		};
+	};
 	class V_PlateCarrierIAGL_dgtl_aladeen: V_PlateCarrierIA2_dgtl
 	{
 		author = "$STR_A3_Bohemia_Interactive";
