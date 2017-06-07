@@ -144,7 +144,7 @@ class cfgVehicles
 		nakedUniform = "U_BasicBody";
 		uniformClass = "UB_NRL_roosters_shirt";
 		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\NRL_Clothing\UB_NRL_roosters.paa"};
+		hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\NRL_Clothing\UB_NRL_roosters_CO.paa"};
 		displayName = "Roosters NRL";
 		author = "Tonnie";
 	};
@@ -155,18 +155,18 @@ class cfgVehicles
 		nakedUniform = "U_BasicBody";
 		uniformClass = "UB_NRL_rabbitohs_shirt";
 		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\NRL_Clothing\UB_NRL_rabbitohs.paa"};
+		hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\NRL_Clothing\UB_NRL_rabbitohs_CO.paa"};
 		displayName = "Rabbitohs NRL";
 		author = "Tonnie";
 	};
 	class UB_NRL_broncos : C_man_1 {
 		_generalMacro = "UB_NRL_broncos";
-		editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\C_man_polo_1_F.jpg";
+		editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\C_man_polo_1_F_CO.jpg";
 		scope = 2;
 		nakedUniform = "U_BasicBody";
 		uniformClass = "UB_NRL_broncos_shirt";
 		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\NRL_Clothing\UB_NRL_broncos.paa"};
+		hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\NRL_Clothing\UB_NRL_broncos_CO.paa"};
 		displayName = "Broncos NRL";
 		author = "Tonnie";
 	};
