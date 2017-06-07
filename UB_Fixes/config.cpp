@@ -133,7 +133,7 @@ class cfgVehicles
 		nakedUniform = "U_BasicBody";
 		uniformClass = "UB_Custom_Pilot_Uniform_White";
 		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\Uniforms\UB_Custom_PilotWhite.co.paa"};
+		hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\Uniforms\UB_Custom_PilotWhite_co.paa"};
 		displayName = "ASSASSIN8ED Uniform";
 		author = "Tonnie";
 	};
