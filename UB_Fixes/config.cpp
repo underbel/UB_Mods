@@ -107,7 +107,7 @@ class cfgVehicles
 	class UB_Custom_RAN_Uniform : I_Soldier_02_F {
 		_generalMacro = "UB_Custom_RAN_Uniform";
 		editorPreview="\UB_SND_TEX\textures\skins\Uniforms\UI_RAN.paa";
-		scope = public;
+		scope = 2;
 		nakedUniform = "U_BasicBody";
 		uniformClass = "UB_Custom_RAN_Uniform_Class";
 		hiddenSelections[] = {"Camo","Insignia"};
@@ -118,7 +118,7 @@ class cfgVehicles
 	class UB_Custom_RAN_SS_Uniform : I_Soldier_02_F {
 		_generalMacro = "UB_Custom_RAN_Uniform";
 		editorPreview="\k_suits\data\UI_suits.paa";
-		scope = public;
+		scope = 2;
 		nakedUniform = "U_BasicBody";
 		uniformClass = "UB_Custom_RAN_Uniform_SS_Class";
 		hiddenSelections[] = {"Camo","Insignia"};
@@ -129,7 +129,7 @@ class cfgVehicles
 	class UB_Custom_PilotWhite : C_man_1 {
 		_generalMacro = "UB_Custom_PilotWhite";
 		editorPreview="\k_suits\data\UI_suits.paa";
-		scope = public;
+		scope = 2;
 		nakedUniform = "U_BasicBody";
 		uniformClass = "UB_Custom_Pilot_Uniform_White";
 		hiddenSelections[] = {"Camo"};
@@ -140,7 +140,7 @@ class cfgVehicles
 	class UB_NRL_roosters : C_man_1 {
 		_generalMacro = "UB_NRL_roosters";
 		editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\C_man_polo_1_F.jpg";
-		scope = public;
+		scope = 2;
 		nakedUniform = "U_BasicBody";
 		uniformClass = "UB_NRL_roosters_shirt";
 		hiddenSelections[] = {"Camo"};
@@ -151,7 +151,7 @@ class cfgVehicles
 	class UB_NRL_rabbitohs : C_man_1 {
 		_generalMacro = "UB_NRL_rabbitohs";
 		editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\C_man_polo_1_F.jpg";
-		scope = public;
+		scope = 2;
 		nakedUniform = "U_BasicBody";
 		uniformClass = "UB_NRL_rabbitohs_shirt";
 		hiddenSelections[] = {"Camo"};
@@ -162,7 +162,7 @@ class cfgVehicles
 	class UB_NRL_broncos : C_man_1 {
 		_generalMacro = "UB_NRL_broncos";
 		editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\C_man_polo_1_F.jpg";
-		scope = public;
+		scope = 2;
 		nakedUniform = "U_BasicBody";
 		uniformClass = "UB_NRL_broncos_shirt";
 		hiddenSelections[] = {"Camo"};
@@ -808,7 +808,7 @@ class cfgWeapons
 		};
 	};
 	class UB_Custom_RAN_Uniform_Class : Uniform_Base {
-		scope = public;
+		scope = 2;
 		author="Tonnie";
 		displayName = "Royal Australian Navy Uniform";
 		picture = "\UB_SND_TEX\textures\skins\Uniforms\UI_RAN.paa";
@@ -821,7 +821,7 @@ class cfgWeapons
 		};
 	};
 		class UB_Custom_RAN_Uniform_SS_Class : Uniform_Base {
-		scope = public;
+		scope = 2;
 		author="Tonnie";
 		displayName = "Royal Australian Navy Rolled Uniform";
 		picture = "\UB_SND_TEX\textures\skins\Uniforms\UI_RAN.paa";
@@ -835,7 +835,7 @@ class cfgWeapons
 	};
 		class UB_Custom_RAN_Cap : ItemCore 	{
 		author = "Tonnie";
-		scope = public;
+		scope = 2;
 		displayName = "Royal Australian Navy Cap";
 		picture = "\UB_SND_TEX\textures\skins\Uniforms\UI_RAN.paa";
 		model = "\A3\Characters_F\common\capb";
@@ -852,7 +852,7 @@ class cfgWeapons
 	};
 		
 		class UB_Custom_Pilot_Uniform_White : Uniform_Base {
-		scope = public;
+		scope = 2;
 		author="Tonnie";
 		displayName = "ASSASSIN8ED Uniform";
 		picture = "\k_suits\data\UI_suits.paa";
@@ -867,7 +867,7 @@ class cfgWeapons
 		class UB_Pilot_Hat_Custom : ItemCore 
 	{
 		author = "James Jalal";
-		scope = public;
+		scope = 2;
 		displayName = "ASSASSIN8ED Hat";
 		picture = "\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
 		model = "\johnny_payday_masks\data\general0.p3d";
@@ -884,7 +884,7 @@ class cfgWeapons
 		};
 	};
 		class UB_NRL_roosters_shirt : Uniform_Base {
-		scope = public;
+		scope = 2;
 		author="Tonnie";
 		displayName = "Roosters NRL";
 		picture = "\UB_SND_TEX\textures\skins\NRL_Clothing\roosters_ui.paa";
@@ -897,7 +897,7 @@ class cfgWeapons
 		};
 	};
 	class UB_NRL_rabbitohs_shirt : Uniform_Base {
-		scope = public;
+		scope = 2;
 		author="Tonnie";
 		displayName = "Rabbitohs NRL";
 		picture = "\UB_SND_TEX\textures\skins\NRL_Clothing\rabbitohs_ui.paa";
@@ -911,7 +911,7 @@ class cfgWeapons
 	};
 
 	class UB_NRL_broncos_shirt : Uniform_Base {
-		scope = public;
+		scope = 2;
 		author="Tonnie";
 		displayName = "Broncos NRL";
 		picture = "\UB_SND_TEX\textures\skins\NRL_Clothing\broncos_ui.paa";
@@ -1206,7 +1206,7 @@ class cfgWeapons
     	};
 	class UB_Custom_RAN_Vest : Vest_Camo_Base {
 		author = "Tonnie";
-		scope = public;
+		scope = 2;
 		displayName = "Royal Australian Navy Combat Vest";
 		picture = "\UB_SND_TEX\textures\skins\Uniforms\UI_RAN.paa";
 		model = "\SOE\data\DragonfireG2CPL.p3d";
