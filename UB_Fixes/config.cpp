@@ -280,31 +280,23 @@ class cfgVehicles
     class B_Soldier_base_F;	
 	class UB_Custom_Aladeenn_MAN : B_Soldier_base_F {
 		scope = 2;
-		side = 3;
-		faction = "UB_Custom_Aladeenn";
-		vehicleClass = "UB_Custom_Aladeenn";
 		displayName = "Khorne Bezerker Uniform";
 		picture = "\A3\characters_f\data\ui\icon_U_B_CombatUniform_mcam_ca.paa";
 		author = "Tonnie";
 		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
-		nakedUniform = "U_BasicBody";
 		uniformClass = "UB_Custom_Aladeenn_UNIFORM";
 		hiddenSelections[] = {"camo","insignia"};
 		hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\Aladeen\UB_Custom_Aladeenn_g3_co.paa"};
 	};
 	class UB_Custom_VOS_MAN : B_Soldier_base_F {
 		scope = 2;
-		side = 3;
-		faction = "UB_Custom_Vos";
-		vehicleClass = "UB_Custom_Vos";
 		displayName = "VOS Uniform";
 		picture = "\A3\characters_f\data\ui\icon_U_B_CombatUniform_mcam_ca.paa";
 		author = "Tonnie";
-		nakedUniform = "U_BasicBody";
+		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
 		uniformClass = "UB_Custom_Vos_UNIFORM";
 		hiddenSelections[] = {"camo","insignia"};
 		hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\Custom\UB_Custom_Vos_g3uniform_co.paa"};
-		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
 	};
 	class B_AOR2_F_AL: B_Soldier_base_F
 	{
@@ -385,7 +377,6 @@ class cfgWeapons
     };
 	
     class srifle_DMR_03_F;
-    class hlc_rifle_bcmjack;
     class srifle_DMR_03_Punisher: srifle_DMR_03_F
     {
         author="$STR_A3_Bohemia_Interactive";
