@@ -928,9 +928,6 @@ class cfgWeapons
 	{
 		author = Tonnie;
 		scope = 2;
-		
-		= 2;
-		scopearsnel = 2;
 		displayName = "Khorne Bezerker Uniform";
 		picture = "\A3\characters_f\data\ui\icon_U_B_CombatUniform_mcam_ca.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F";
