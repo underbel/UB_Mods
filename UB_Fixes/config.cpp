@@ -29,8 +29,13 @@ class CfgPatches
 	    "UB_NRL_rabbitohs",
 	    "UB_NRL_roosters",
 	    "UB_Custom_PilotWhite",
-		"UB_Custom_RAN_Uniform",
-		"UB_Custom_RAN_SS_Uniform"
+	    "UB_Custom_RAN_Uniform",
+	    "UB_Custom_RAN_SS_Uniform",
+	    "UB_Custom_VOS_MAN",
+	    "UB_Custom_Aladeenn_MAN",
+	    "UB_Custom_Vos_Carryall",
+	    "UB_Custom_Aladeenn_Carryall",
+	    "UB_Custom_Sigma_Kitbag"
 	};
 	weapons[]={};
     };	
@@ -73,11 +78,19 @@ class CfgPatches
 			"arifle_MX_Black_F_rubber",
 			"U_B_CombatUniform_Sigma",
 			"srifle_DMR_03_Punisher",
+			"srifle_DMR_03_Bonez",
 			"V_PlateCarrierH_CTRG_sigma",
 			"hlc_rifle_akm_aladeen",
 			"MMG_01_tan_FREZ",
 			"UB_Custom_RAN_Uniform",
-			"UB_Custom_RAN_SS_Uniform"
+			"UB_Custom_RAN_SS_Uniform",
+			"V_PlateCarrierIAGL_dgtl_Vos",
+			"V_PlateCarrierIAGL_dgtl_Aladeenn",
+			"UB_Custom_VOS_MAN",
+			"UB_Custom_Vos_BERET",
+			"UB_Custom_Aladeenn_MAN",
+			"UB_Custom_Aladeenn_BERET",
+		        "tonnie_rifle_bcmblackjack"
 		};
             	requiredAddons[]=
 		{
@@ -97,6 +110,7 @@ class cfgVehicles
 	class A3L_PuntoBlue: A3L_Charger_base
 	{
 	};
+	class ContainerSupply;
 	class Land;
 	class I_Soldier_02_F;
 	class Man: Land {};
@@ -104,6 +118,34 @@ class cfgVehicles
 	class Civilian: CAManBase {};
 	class Civilian_F: Civilian {};
 	class C_man_1: Civilian_F {};	
+	class B_Carryall_Base;
+   	class B_Kitbag_Base;
+	class UB_Custom_Sigma_Kitbag: B_Kitbag_Base	{
+		scope = 2;
+		picture = "\A3\Weapons_F\Ammoboxes\Bags\data\UI\icon_b_c_tortila_blk.paa";
+		hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\Sigma\UB_Custom_Sigma_tiger_kitbag_co.paa"};
+		displayName = "Sigma Kitbag Tiger";		
+		maximumLoad = 280;
+		mass = 60;
+	};
+	class UB_Custom_Aladeenn_Carryall: B_Carryall_Base	{
+		scope = 2;
+		model = "\A3\weapons_f\Ammoboxes\bags\Backpack_Tortila";
+		picture = "\A3\Weapons_F\Ammoboxes\Bags\data\UI\icon_b_c_tortila_blk.paa";
+		hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\Aladeen\UB_Custom_Aladeenn_Carryall_co.paa"};
+		displayName = "Khorne Bezerker Backpack";		
+		maximumLoad = 320;
+		mass = 60;
+	};
+	class UB_Custom_Vos_Carryall: B_Carryall_Base	{
+		scope = 2;
+		model = "\A3\weapons_f\Ammoboxes\bags\Backpack_Tortila";
+		picture = "\A3\Weapons_F\Ammoboxes\Bags\data\UI\icon_b_c_tortila_blk.paa";
+		hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\Custom\UB_Custom_Vos_backpack_co.paa"};
+		displayName = "Vos Carryall Backpack";		
+		maximumLoad = 320;
+		mass = 60;
+	};
 	class UB_Custom_RAN_Uniform : I_Soldier_02_F {
 		_generalMacro = "UB_Custom_RAN_Uniform";
 		editorPreview="\UB_SND_TEX\textures\skins\Uniforms\UI_RAN.paa";
@@ -236,6 +278,26 @@ class cfgVehicles
 		};
 	};		
     class B_Soldier_base_F;	
+	class UB_Custom_Aladeenn_MAN : B_Soldier_base_F {
+		scope = 2;
+		displayName = "Khorne Bezerker Uniform";
+		picture = "\A3\characters_f\data\ui\icon_U_B_CombatUniform_mcam_ca.paa";
+		author = "Tonnie";
+		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
+		uniformClass = "UB_Custom_Aladeenn_UNIFORM";
+		hiddenSelections[] = {"camo","insignia"};
+		hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\Aladeen\UB_Custom_Aladeenn_g3_co.paa"};
+	};
+	class UB_Custom_VOS_MAN : B_Soldier_base_F {
+		scope = 2;
+		displayName = "VOS Uniform";
+		picture = "\A3\characters_f\data\ui\icon_U_B_CombatUniform_mcam_ca.paa";
+		author = "Tonnie";
+		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
+		uniformClass = "UB_Custom_Vos_UNIFORM";
+		hiddenSelections[] = {"camo","insignia"};
+		hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\Custom\UB_Custom_Vos_g3uniform_co.paa"};
+	};
 	class B_AOR2_F_AL: B_Soldier_base_F
 	{
 		scope = 1;
@@ -332,7 +394,51 @@ class cfgWeapons
             "\UB_SND_TEX\textures\skins\mk1\DMR_03_02.paa"
         };
     };
-	
+    class srifle_DMR_03_Bonez: srifle_DMR_03_F
+    {
+        author="$STR_A3_Bohemia_Interactive";
+        _generalMacro="srifle_DMR_03_khaki_F";
+		
+        displayName="Bonez DMR";
+        picture="\A3\Weapons_F_Mark\LongRangeRifles\DMR_03\Data\UI\gear_DMR_03_khaki_X_CA.paa";
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2"
+        };
+        hiddenSelectionsTextures[]=
+        {
+            "\UB_SND_TEX\textures\skins\mk1\UB_Custom_DMR_Bonez_01.paa",
+            "\UB_SND_TEX\textures\skins\mk1\UB_Custom_DMR_Bonez_02.paa"
+        };
+    };
+    class hlc_rifle_bcmjack;
+    class tonnie_rifle_bcmblackjack: hlc_rifle_bcmjack
+    {
+        author="Tonnie";
+        _generalMacro="tonnie_rifle_bcmblackjack_yo";
+		
+        displayName="Kryptek 'Tonnie' Custom .300 Blackout";
+        picture="\UB_SND_TEX\textures\skins\Tonnie\tonnie_ui.paa";
+        hiddenSelections[]=
+        {
+			"Upper",
+			"Lower",
+			"Foregrip",
+			"foregrip_rail",
+			"Sights",
+			"Stock"
+        };
+        hiddenSelectionsTextures[]=
+        {
+			"\UB_SND_TEX\textures\skins\Tonnie\weapon\upper_co.paa",
+			"\UB_SND_TEX\textures\skins\Tonnie\weapon\lower2_co.paa",
+			"\UB_SND_TEX\textures\skins\Tonnie\weapon\smr_co.paa",
+			"\UB_SND_TEX\textures\skins\Tonnie\weapon\smr_toprail_co.paa",
+			"\UB_SND_TEX\textures\skins\Tonnie\weapon\tbs_co.paa",
+			"\UB_SND_TEX\textures\skins\Tonnie\weapon\b5sopmod_co.paa"
+        };
+    };
     class hlc_rifle_bcmblackjack;
     class hlc_rifle_bcmblackjack_paisley: hlc_rifle_bcmblackjack
     {
@@ -776,6 +882,8 @@ class cfgWeapons
 	class ItemCore;
 	class HeadgearItem;
 	class Vest_Camo_Base;
+	class H_Beret_blk; 
+	class iteminfo; 	
 	class UniformItem: InventoryItem_Base_F
 	{
 	};
@@ -805,6 +913,74 @@ class cfgWeapons
 			uniformClass="B_Soldier_Sigma";
 			containerClass="Supply40";
 			mass=40;
+		};
+	};
+	class UB_Custom_Aladeenn_UNIFORM : Uniform_Base 
+	{
+		author = Tonnie;
+		scope = 2;
+		displayName = "Khorne Bezerker Uniform";
+		picture = "\A3\characters_f\data\ui\icon_U_B_CombatUniform_mcam_ca.paa";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F";
+		class ItemInfo : UniformItem 
+		{
+			uniformModel = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F";
+			uniformClass = "UB_Custom_Aladeenn_MAN";
+			containerClass = "Supply60";
+			mass = 2;
+		};
+	};
+	class UB_Custom_Vos_UNIFORM : Uniform_Base 
+	{
+		author = Tonnie;
+		scope = 2;
+		displayName = "Vos Uniform";
+		picture = "\A3\characters_f\data\ui\icon_U_B_CombatUniform_mcam_ca.paa";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F";
+		class ItemInfo : UniformItem 
+		{
+			uniformModel = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F";
+			uniformClass = "UB_Custom_VOS_MAN";
+			containerClass = "Supply60";
+			mass = 2;
+		};
+	};
+	class UB_Custom_Aladeenn_BERET : ItemCore {
+		author = "Tonnie";
+		scope = 2;
+		weaponPoolAvailable = 1;
+		displayName = "Khorne Bezerker Beret";
+		picture = "\A3\characters_f\data\ui\icon_U_B_CombatUniform_mcam_ca.paa";
+		model = "\A3\characters_f_epb\BLUFOR\headgear_beret02";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\Aladeen\UB_Custom_Aladeenn_Beret_co.paa"};
+		class ItemInfo : HeadgearItem 
+                {
+			mass = 6;
+			uniformModel = "\A3\characters_f_epb\BLUFOR\headgear_beret02";
+			modelSides[] = {3, 1};
+			armor = 0;
+			passThrough = 1;
+			hiddenSelections[] = {"camo"};
+		};
+	};
+	class UB_Custom_Vos_BERET : ItemCore {
+		author = "Tonnie";
+		scope = 2;
+		weaponPoolAvailable = 1;
+		displayName = "Vos Beret";
+		picture = "\A3\characters_f\data\ui\icon_U_B_CombatUniform_mcam_ca.paa";
+		model = "\A3\characters_f_epb\BLUFOR\headgear_beret02";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\Custom\UB_Custom_Vos_BERET_co.paa"};
+		class ItemInfo : HeadgearItem 
+                {
+			mass = 6;
+			uniformModel = "\A3\characters_f_epb\BLUFOR\headgear_beret02";
+			modelSides[] = {3, 1};
+			armor = 0;
+			passThrough = 1;
+			hiddenSelections[] = {"camo"};
 		};
 	};
 	class UB_Custom_RAN_Uniform_Class : Uniform_Base {
@@ -1209,15 +1385,15 @@ class cfgWeapons
 		scope = 2;
 		displayName = "Royal Australian Navy Combat Vest";
 		picture = "\UB_SND_TEX\textures\skins\Uniforms\UI_RAN.paa";
-		model = "\SOE\data\DragonfireG2CPL.p3d";
+		model = "\SOE\data\DragonfireG2CP.p3d";
 		hiddenSelections[] = {"camo","camo1"};
 		hiddenSelectionsTextures[] = {"SOE\data\PBDF_BK.paa","\UB_SND_TEX\textures\skins\Uniforms\UB_Custom_RAN_Vest_co.paa"};
 		hiddenSelectionsMaterials[] = {"SOE\data\PBDF.rvmat","SOE\data\PLATE.rvmat"};
 		descriptionShort = "Armor Level III";
 		class ItemInfo: VestItem {
-			uniformModel = "\SOE\data\DragonfireG2CPL.p3d";
+			uniformModel = "\SOE\data\DragonfireG2CP.p3d";
 			hiddenSelections[] = {"camo","camo1"};
-			containerClass = "Supply100";
+			containerClass = "Supply80";
 			mass = 70;
 			armor = 30;
 			class HitpointsProtectionInfo {
@@ -1242,6 +1418,132 @@ class cfgWeapons
 				};
 			};
 
+		};
+	};
+	class V_PlateCarrierIAGL_dgtl_Aladeenn: V_PlateCarrierIA2_dgtl	{
+		author = "$STR_A3_Bohemia_Interactive";
+		_generalMacro = "V_PlateCarrierIAGL_dgtl11";
+		scope = 2;
+		displayName = "Khorne Bezerker Battle Vest";
+		picture = "\A3\Characters_F_Mark\Data\UI\icon_ga_carrier_gl_rig_digi.paa";
+		model = "\A3\Characters_F_Beta\INDEP\equip_ia_ga_carrier_gl_rig.p3d";
+		DLC = "Mark";
+		descriptionShort = "$STR_A3_SP_E";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\Aladeen\UB_Custom_Aladeenn_vest01_co.paa","\UB_SND_TEX\textures\skins\Aladeen\UB_Custom_Aladeenn_vest02_co.paa"};
+		class ItemInfo: VestItem
+		{
+			uniformModel = "\A3\Characters_F_beta\INDEP\equip_ia_ga_carrier_gl_rig.p3d";
+			containerClass = "Supply120";
+			mass = 80;
+			hiddenSelections[] = {"camo1","camo2"};
+			class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 8;
+					passThrough = 0.5;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 8;
+					passThrough = 0.5;
+				};
+				class Chest
+				{
+					hitpointName = "HitChest";
+					armor = 78;
+					passThrough = 0.6;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 78;
+					passThrough = 0.6;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 16;
+					passThrough = 0.3;
+				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 16;
+					passThrough = 0.3;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					passThrough = 0.6;
+				};
+			};
+		};
+	};
+	class V_PlateCarrierIAGL_dgtl_Vos: V_PlateCarrierIA2_dgtl	{
+		author = "$STR_A3_Bohemia_Interactive";
+		_generalMacro = "V_PlateCarrierIAGL_dgtl1";
+		scope = 2;
+		displayName = "Vos Vest";
+		picture = "\A3\Characters_F_Mark\Data\UI\icon_ga_carrier_gl_rig_digi.paa";
+		model = "\A3\Characters_F_Beta\INDEP\equip_ia_ga_carrier_gl_rig.p3d";
+		DLC = "Mark";
+		descriptionShort = "$STR_A3_SP_E";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\Custom\UB_Custom_Vos_Vest1_co.paa","\UB_SND_TEX\textures\skins\Custom\UB_Custom_Vos_Vest2_co.paa"};
+		class ItemInfo: VestItem
+		{
+			uniformModel = "\A3\Characters_F_beta\INDEP\equip_ia_ga_carrier_gl_rig.p3d";
+			containerClass = "Supply120";
+			mass = 80;
+			hiddenSelections[] = {"camo1","camo2"};
+			class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 8;
+					passThrough = 0.5;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 8;
+					passThrough = 0.5;
+				};
+				class Chest
+				{
+					hitpointName = "HitChest";
+					armor = 78;
+					passThrough = 0.6;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 78;
+					passThrough = 0.6;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 16;
+					passThrough = 0.3;
+				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 16;
+					passThrough = 0.3;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					passThrough = 0.6;
+				};
+			};
 		};
 	};
 	class V_PlateCarrierIAGL_dgtl_aladeen: V_PlateCarrierIA2_dgtl
