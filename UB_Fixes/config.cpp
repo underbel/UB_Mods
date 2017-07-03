@@ -286,7 +286,7 @@ class cfgVehicles
 		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
 		uniformClass = "UB_Custom_Aladeenn_UNIFORM";
 		hiddenSelections[] = {"camo","insignia"};
-		hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\Aladeen\UB_Custom_Aladeenn_g3_co.paa"};
+		hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\Aladeen\UB_Custom_Aladeenn_g3_co.paa",""};
 	};
 	class UB_Custom_VOS_MAN : B_Soldier_base_F {
 		scope = 2;
@@ -296,7 +296,7 @@ class cfgVehicles
 		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
 		uniformClass = "UB_Custom_Vos_UNIFORM";
 		hiddenSelections[] = {"camo","insignia"};
-		hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\Custom\UB_Custom_Vos_g3uniform_co.paa"};
+		hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\Custom\UB_Custom_Vos_g3uniform_co.paa",""};
 	};
 	class B_AOR2_F_AL: B_Soldier_base_F
 	{
