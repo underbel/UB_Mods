@@ -15,6 +15,7 @@ class CfgPatches
 	    "asdg_jointrails",
 	    "hlcweapons_core",
 	    "hlcweapons_ar15",
+	    "hlc_wp_ak",
 	    "A3_Weapons_F_Mark"
 	};
 	requiredVersion=0.1;
@@ -35,7 +36,9 @@ class CfgPatches
 	    "UB_Custom_Aladeenn_MAN",
 	    "UB_Custom_Vos_Carryall",
 	    "UB_Custom_Aladeenn_Carryall",
-	    "UB_Custom_Sigma_Kitbag"
+	    "UB_Custom_Sigma_Kitbag",
+	    "UB_Custom_Tonnie_Carryall",
+  	    "UB_Custom_Tonnie_MAN"
 	};
 	weapons[]={};
     };	
@@ -86,11 +89,16 @@ class CfgPatches
 			"UB_Custom_RAN_SS_Uniform",
 			"V_PlateCarrierIAGL_dgtl_Vos",
 			"V_PlateCarrierIAGL_dgtl_Aladeenn",
+			"V_PlateCarrierIAGL_dgtl_Tonnie",
 			"UB_Custom_VOS_MAN",
 			"UB_Custom_Vos_BERET",
 			"UB_Custom_Aladeenn_MAN",
 			"UB_Custom_Aladeenn_BERET",
-		        "tonnie_rifle_bcmblackjack"
+		    	"tonnie_rifle_bcmblackjack",
+			"evt_rifle_ak12GL",
+			"UB_Custom_EVT_MAN",
+			"UB_Custom_DezzNuts_BERET",
+			"UB_Custom_Tonnie_MAN"
 		};
             	requiredAddons[]=
 		{
@@ -120,6 +128,15 @@ class cfgVehicles
 	class C_man_1: Civilian_F {};	
 	class B_Carryall_Base;
    	class B_Kitbag_Base;
+	class UB_Custom_Tonnie_Carryall: B_Carryall_Base	{
+		scope = 2;
+		model = "\A3\weapons_f\Ammoboxes\bags\Backpack_Tortila";
+        picture="\UB_SND_TEX\textures\skins\Tonnie\tonnie_ui.paa";
+		hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\Tonnie\UB_Custom_kryptek_Backpack_co.paa"};
+		displayName = "Kryptek Backpack";		
+		maximumLoad = 320;
+		mass = 60;
+	};
 	class UB_Custom_Sigma_Kitbag: B_Kitbag_Base	{
 		scope = 2;
 		picture = "\A3\Weapons_F\Ammoboxes\Bags\data\UI\icon_b_c_tortila_blk.paa";
@@ -288,6 +305,16 @@ class cfgVehicles
 		hiddenSelections[] = {"camo","insignia"};
 		hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\Aladeen\UB_Custom_Aladeenn_g3_co.paa",""};
 	};
+	class UB_Custom_Tonnie_MAN : B_Soldier_base_F {
+		scope = 2;
+		displayName = "EVT Kryptek Uniform";
+        picture="\UB_SND_TEX\textures\skins\Tonnie\tonnie_ui.paa";
+		author = "Tonnie";
+		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
+		uniformClass = "UB_Custom_Tonnie_UNIFORM";
+		hiddenSelections[] = {"camo","insignia"};
+		hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\Tonnie\UB_Custom_kryptek_uniform_co.paa"};
+	};
 	class UB_Custom_VOS_MAN : B_Soldier_base_F {
 		scope = 2;
 		displayName = "VOS Uniform";
@@ -398,7 +425,6 @@ class cfgWeapons
     {
         author="$STR_A3_Bohemia_Interactive";
         _generalMacro="srifle_DMR_03_khaki_F";
-		
         displayName="Bonez DMR";
         picture="\A3\Weapons_F_Mark\LongRangeRifles\DMR_03\Data\UI\gear_DMR_03_khaki_X_CA.paa";
         hiddenSelections[]=
@@ -412,6 +438,33 @@ class cfgWeapons
             "\UB_SND_TEX\textures\skins\mk1\UB_Custom_DMR_Bonez_02.paa"
         };
     };
+	class hlc_rifle_ak12GL;
+	class evt_rifle_ak12GL: hlc_rifle_ak12GL
+	{
+        author="Tonnie";
+        _generalMacro="tonnie_yo";
+        displayName="Kryptek 'EVT' AK12(GL)";
+		model="\hlc_wp_ak\mesh\ak12\ak12GP.p3d";
+		picture="\hlc_wp_ak\tex\ui\gear_ak12GL_ca";
+		hiddenSelections[]=
+		{
+			"Main",
+			"Foregrip",
+			"Bracket",
+			"Bipod",
+			"GP30",
+			"Magazine"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\UB_SND_TEX\textures\skins\EVT\Weapon\UB_Custom_ak12_m_co.paa",
+			"\UB_SND_TEX\textures\skins\EVT\Weapon\UB_Custom_ak12_upper_co",
+			"\UB_SND_TEX\textures\skins\EVT\Weapon\UB_Custom_rail_co.paa",
+			"\UB_SND_TEX\textures\skins\EVT\Weapon\UB_Custom_aks-74u_co.paa",
+			"\UB_SND_TEX\textures\skins\EVT\Weapon\UB_Custom_gp30_co.paa",
+			"\UB_SND_TEX\textures\skins\EVT\Weapon\UB_Custom_ak12_mag_co.paa"
+		};
+	};
     class hlc_rifle_bcmjack;
     class tonnie_rifle_bcmblackjack: hlc_rifle_bcmjack
     {
@@ -943,6 +996,40 @@ class cfgWeapons
 			uniformClass = "UB_Custom_VOS_MAN";
 			containerClass = "Supply60";
 			mass = 2;
+		};
+	};
+	class UB_Custom_Tonnie_UNIFORM : Uniform_Base 
+	{
+		author = Tonnie;
+		scope = 2;
+		displayName = "Kryptek Uniform";
+        picture="\UB_SND_TEX\textures\skins\Tonnie\tonnie_ui.paa";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F";
+		class ItemInfo : UniformItem 
+		{
+			uniformModel = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F";
+			uniformClass = "UB_Custom_Tonnie_MAN";
+			containerClass = "Supply60";
+			mass = 2;
+		};
+	};
+	class UB_Custom_DezzNuts_BERET : ItemCore {
+		author = "Tonnie";
+		scope = 2;
+		weaponPoolAvailable = 1;
+		displayName = "Kryptek Deez Nuts Beret";
+        picture="\UB_SND_TEX\textures\skins\Tonnie\tonnie_ui.paa";
+		model = "\A3\characters_f_epb\BLUFOR\headgear_beret02";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\JamesAsif\Uniform\UB_Custom_deezNuts_Beret_co.paa"};
+		class ItemInfo : HeadgearItem 
+                {
+			mass = 6;
+			uniformModel = "\A3\characters_f_epb\BLUFOR\headgear_beret02";
+			modelSides[] = {3, 1};
+			armor = 0;
+			passThrough = 1;
+			hiddenSelections[] = {"camo"};
 		};
 	};
 	class UB_Custom_Aladeenn_BERET : ItemCore {
@@ -1546,6 +1633,7 @@ class cfgWeapons
 			};
 		};
 	};
+
 	class V_PlateCarrierIAGL_dgtl_aladeen: V_PlateCarrierIA2_dgtl
 	{
 		author = "$STR_A3_Bohemia_Interactive";
@@ -1611,7 +1699,71 @@ class cfgWeapons
 		};
 	};
 };
-
+	class V_PlateCarrierIAGL_dgtl_Tonnie: V_PlateCarrierIA2_dgtl	{
+		author = "$STR_A3_Bohemia_Interactive";
+		_generalMacro = "V_PlateCarrierIAGL_dgtl11";
+		scope = 2;
+		scopecurator = 2;
+		scopearsnel = 2;
+		displayName = "Kryptek Combat Vest";
+        picture="\UB_SND_TEX\textures\skins\Tonnie\tonnie_ui.paa";
+		model = "\A3\Characters_F_Beta\INDEP\equip_ia_ga_carrier_gl_rig.p3d";
+		DLC = "Mark";
+		descriptionShort = "$STR_A3_SP_E";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\JamesAsif\Uniform\UB_Custom_kryptek_vest_01_co.paa","\UB_SND_TEX\textures\skins\JamesAsif\Uniform\UB_Custom_kryptek_vest_02_co.paa"};
+		class ItemInfo: VestItem
+		{
+			uniformModel = "\A3\Characters_F_beta\INDEP\equip_ia_ga_carrier_gl_rig.p3d";
+			containerClass = "Supply120";
+			mass = 80;
+			hiddenSelections[] = {"camo1","camo2"};
+			class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 8;
+					passThrough = 0.5;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 8;
+					passThrough = 0.5;
+				};
+				class Chest
+				{
+					hitpointName = "HitChest";
+					armor = 78;
+					passThrough = 0.6;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 78;
+					passThrough = 0.6;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 16;
+					passThrough = 0.3;
+				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 16;
+					passThrough = 0.3;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					passThrough = 0.6;
+				};
+			};
+		};
+	};
 class cfgMods
 {
 	author="76561198116014678";
