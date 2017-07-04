@@ -15,7 +15,6 @@ class CfgPatches
 	    "asdg_jointrails",
 	    "hlcweapons_core",
 	    "hlcweapons_ar15",
-	    "hlc_wp_ak",
 	    "A3_Weapons_F_Mark"
 	};
 	requiredVersion=0.1;
@@ -94,7 +93,7 @@ class CfgPatches
 			"UB_Custom_Vos_BERET",
 			"UB_Custom_Aladeenn_MAN",
 			"UB_Custom_Aladeenn_BERET",
-		    	"tonnie_rifle_bcmblackjack",
+		    "tonnie_rifle_bcmblackjack",
 			"evt_rifle_ak12GL",
 			"UB_Custom_EVT_MAN",
 			"UB_Custom_DezzNuts_BERET",
@@ -132,7 +131,7 @@ class cfgVehicles
 		scope = 2;
 		model = "\A3\weapons_f\Ammoboxes\bags\Backpack_Tortila";
         picture="\UB_SND_TEX\textures\skins\Tonnie\tonnie_ui.paa";
-		hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\Tonnie\UB_Custom_kryptek_Backpack_co.paa"};
+		hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\JamesAsif\Uniform\UB_Custom_kryptek_Backpack_co.paa"};
 		displayName = "Kryptek Backpack";		
 		maximumLoad = 320;
 		mass = 60;
@@ -313,7 +312,7 @@ class cfgVehicles
 		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
 		uniformClass = "UB_Custom_Tonnie_UNIFORM";
 		hiddenSelections[] = {"camo","insignia"};
-		hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\Tonnie\UB_Custom_kryptek_uniform_co.paa"};
+		hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\JamesAsif\Uniform\UB_Custom_kryptek_uniform_co.paa"};
 	};
 	class UB_Custom_VOS_MAN : B_Soldier_base_F {
 		scope = 2;
@@ -445,7 +444,7 @@ class cfgWeapons
         _generalMacro="tonnie_yo";
         displayName="Kryptek 'EVT' AK12(GL)";
 		model="\hlc_wp_ak\mesh\ak12\ak12GP.p3d";
-		picture="\hlc_wp_ak\tex\ui\gear_ak12GL_ca";
+        picture="\UB_SND_TEX\textures\skins\Tonnie\tonnie_ui.paa";
 		hiddenSelections[]=
 		{
 			"Main",
@@ -457,12 +456,12 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\UB_SND_TEX\textures\skins\EVT\Weapon\UB_Custom_ak12_m_co.paa",
-			"\UB_SND_TEX\textures\skins\EVT\Weapon\UB_Custom_ak12_upper_co",
-			"\UB_SND_TEX\textures\skins\EVT\Weapon\UB_Custom_rail_co.paa",
-			"\UB_SND_TEX\textures\skins\EVT\Weapon\UB_Custom_aks-74u_co.paa",
-			"\UB_SND_TEX\textures\skins\EVT\Weapon\UB_Custom_gp30_co.paa",
-			"\UB_SND_TEX\textures\skins\EVT\Weapon\UB_Custom_ak12_mag_co.paa"
+			"\UB_SND_TEX\textures\skins\JamesAsif\Weapon\UB_Custom_ak12_m_co.paa",
+			"\UB_SND_TEX\textures\skins\JamesAsif\Weapon\UB_Custom_ak12_upper_co",
+			"\UB_SND_TEX\textures\skins\JamesAsif\Weapon\UB_Custom_rail_co.paa",
+			"\UB_SND_TEX\textures\skins\JamesAsif\Weapon\UB_Custom_aks-74u_co.paa",
+			"\UB_SND_TEX\textures\skins\JamesAsif\Weapon\UB_Custom_gp30_co.paa",
+			"\UB_SND_TEX\textures\skins\JamesAsif\Weapon\UB_Custom_ak12_mag_co.paa"
 		};
 	};
     class hlc_rifle_bcmjack;
@@ -1633,72 +1632,6 @@ class cfgWeapons
 			};
 		};
 	};
-
-	class V_PlateCarrierIAGL_dgtl_aladeen: V_PlateCarrierIA2_dgtl
-	{
-		author = "$STR_A3_Bohemia_Interactive";
-		_generalMacro = "V_PlateCarrierIAGL_dgtl";
-		scope = 2;
-		displayName = "Aladeens Vest";
-		picture = "\A3\Characters_F_Mark\Data\UI\icon_ga_carrier_gl_rig_digi.paa";
-		model = "\A3\Characters_F_Beta\INDEP\equip_ia_ga_carrier_gl_rig.p3d";
-		DLC = "Mark";
-		descriptionShort = "$STR_A3_SP_ER";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\first.paa","\UB_SND_TEX\textures\skins\second.paa"};
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\A3\Characters_F_beta\INDEP\equip_ia_ga_carrier_gl_rig.p3d";
-			containerClass = "Supply120";
-			mass = 80;
-			hiddenSelections[] = {"camo1","camo2"};
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 8;
-					passThrough = 0.5;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 8;
-					passThrough = 0.5;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 78;
-					passThrough = 0.6;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 78;
-					passThrough = 0.6;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 16;
-					passThrough = 0.3;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 16;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.6;
-				};
-			};
-		};
-	};
-};
 	class V_PlateCarrierIAGL_dgtl_Tonnie: V_PlateCarrierIA2_dgtl	{
 		author = "$STR_A3_Bohemia_Interactive";
 		_generalMacro = "V_PlateCarrierIAGL_dgtl11";
@@ -1764,6 +1697,71 @@ class cfgWeapons
 			};
 		};
 	};
+	class V_PlateCarrierIAGL_dgtl_aladeen: V_PlateCarrierIA2_dgtl
+	{
+		author = "$STR_A3_Bohemia_Interactive";
+		_generalMacro = "V_PlateCarrierIAGL_dgtl";
+		scope = 2;
+		displayName = "Aladeens Vest";
+		picture = "\A3\Characters_F_Mark\Data\UI\icon_ga_carrier_gl_rig_digi.paa";
+		model = "\A3\Characters_F_Beta\INDEP\equip_ia_ga_carrier_gl_rig.p3d";
+		DLC = "Mark";
+		descriptionShort = "$STR_A3_SP_ER";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"\UB_SND_TEX\textures\skins\first.paa","\UB_SND_TEX\textures\skins\second.paa"};
+		class ItemInfo: VestItem
+		{
+			uniformModel = "\A3\Characters_F_beta\INDEP\equip_ia_ga_carrier_gl_rig.p3d";
+			containerClass = "Supply120";
+			mass = 80;
+			hiddenSelections[] = {"camo1","camo2"};
+			class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 8;
+					passThrough = 0.5;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 8;
+					passThrough = 0.5;
+				};
+				class Chest
+				{
+					hitpointName = "HitChest";
+					armor = 78;
+					passThrough = 0.6;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 78;
+					passThrough = 0.6;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 16;
+					passThrough = 0.3;
+				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 16;
+					passThrough = 0.3;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					passThrough = 0.6;
+				};
+			};
+		};
+	};
+};
 class cfgMods
 {
 	author="76561198116014678";
