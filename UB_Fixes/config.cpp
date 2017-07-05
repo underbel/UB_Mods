@@ -93,11 +93,12 @@ class CfgPatches
 			"UB_Custom_Vos_BERET",
 			"UB_Custom_Aladeenn_MAN",
 			"UB_Custom_Aladeenn_BERET",
-		        "tonnie_rifle_bcmblackjack",
+		    "tonnie_rifle_bcmblackjack",
 			"evt_rifle_ak12GL",
 			"UB_Custom_EVT_MAN",
 			"UB_Custom_DezzNuts_BERET",
-			"UB_Custom_Tonnie_MAN"
+			"UB_Custom_Tonnie_MAN",
+			"UB_Custom_Mp5"
 		};
             	requiredAddons[]=
 		{
@@ -1436,6 +1437,31 @@ class cfgWeapons
 		};
 		HLC_CurrentBarrel="hlc_barrel_standard";
 	};	
+    class hlc_smg_mp5a2;
+	class UB_Custom_MP5 : hlc_smg_mp5a2
+	{
+        author="Tonnie";
+        displayName="Anthony Healy's [UNSC] MP5A3";
+		model="\hlc_wp_Mp5\mesh\mp5a2\mp5.p3d";
+        hiddenSelections[]=
+        {
+			"Reciever",
+			"FCG",
+			"Stock",
+			"Foregrip",
+			"Rail",
+			"Magazine"
+        };
+        hiddenSelectionsTextures[]=
+        {
+            "\UB_SND_TEX\textures\skins\Healy\Weapon\UB_Custom_Anthony_receiver_co.paa",
+			"\UB_SND_TEX\textures\skins\Healy\Weapon\UB_Custom_Anthony_Sef_co.paa",
+            "\UB_SND_TEX\textures\skins\Healy\Weapon\UB_Custom_Anthony_fullstock_co.paa",
+			"\UB_SND_TEX\textures\skins\Healy\Weapon\UB_Custom_Anthony_foregrip_co.paa",
+			"\UB_SND_TEX\textures\skins\Healy\Weapon\UB_Custom_Anthony_Rail_co.paa",
+			"\UB_SND_TEX\textures\skins\Healy\Weapon\UB_Custom_Anthony_Mag_co.paa"
+        };
+    };
 	class Vest_NoCamo_Base: ItemCore {};
 	class V_PlateCarrierIA1_dgtl: Vest_NoCamo_Base {};
 	class V_PlateCarrierIA2_dgtl: V_PlateCarrierIA1_dgtl {};
