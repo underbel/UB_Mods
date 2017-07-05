@@ -93,7 +93,7 @@ class CfgPatches
 			"UB_Custom_Vos_BERET",
 			"UB_Custom_Aladeenn_MAN",
 			"UB_Custom_Aladeenn_BERET",
-		    "tonnie_rifle_bcmblackjack",
+		    	"tonnie_rifle_bcmblackjack",
 			"evt_rifle_ak12GL",
 			"UB_Custom_EVT_MAN",
 			"UB_Custom_DezzNuts_BERET",
